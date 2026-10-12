@@ -1,0 +1,2605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 100;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3EA625D8CDF343379815DBE6 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 350EC0B0ACC04131989F6CB6 /* FirebaseAppCheck */; };
+		A17D00000000000000000007 /* SapphireAndroidWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D00000000000000000003 /* SapphireAndroidWidgets.swift */; };
+		A17D00000000000000000008 /* AndroidWidgetSnapshotStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D00000000000000000006 /* AndroidWidgetSnapshotStore.swift */; };
+		A17D00000000000000000009 /* SapphireAndroidWidgets.appex in Embed Widget Extensions */ = {isa = PBXBuildFile; fileRef = A17D00000000000000000001 /* SapphireAndroidWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C0DE20000000000000000001 /* comptest in Embed iDevice Tools */ = {isa = PBXBuildFile; fileRef = C0DE10000000000000000001 /* comptest */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C0DE20000000000000000002 /* idevice_id in Embed iDevice Tools */ = {isa = PBXBuildFile; fileRef = C0DE10000000000000000002 /* idevice_id */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C0DE20000000000000000003 /* ideviceinfo in Embed iDevice Tools */ = {isa = PBXBuildFile; fileRef = C0DE10000000000000000003 /* ideviceinfo */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C0DE20000000000000000004 /* idevicesyslog in Embed iDevice Tools */ = {isa = PBXBuildFile; fileRef = C0DE10000000000000000004 /* idevicesyslog */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C0DE20000000000000000005 /* wificonnection in Embed iDevice Tools */ = {isa = PBXBuildFile; fileRef = C0DE10000000000000000005 /* wificonnection */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C0DE20000000000000000006 /* libcrypto.3.dylib in Embed iDevice Libraries */ = {isa = PBXBuildFile; fileRef = C0DE10000000000000000006 /* libcrypto.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C0DE20000000000000000007 /* libimobiledevice-1.0.6.dylib in Embed iDevice Libraries */ = {isa = PBXBuildFile; fileRef = C0DE10000000000000000007 /* libimobiledevice-1.0.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C0DE20000000000000000008 /* libimobiledevice-glue-1.0.0.dylib in Embed iDevice Libraries */ = {isa = PBXBuildFile; fileRef = C0DE10000000000000000008 /* libimobiledevice-glue-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C0DE20000000000000000009 /* libplist-2.0.4.dylib in Embed iDevice Libraries */ = {isa = PBXBuildFile; fileRef = C0DE10000000000000000009 /* libplist-2.0.4.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C0DE2000000000000000000A /* libssl.3.dylib in Embed iDevice Libraries */ = {isa = PBXBuildFile; fileRef = C0DE1000000000000000000A /* libssl.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C0DE2000000000000000000B /* libusbmuxd-2.0.6.dylib in Embed iDevice Libraries */ = {isa = PBXBuildFile; fileRef = C0DE1000000000000000000B /* libusbmuxd-2.0.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CAFE100000000000000007AA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE100000000000000003AA /* main.swift */; };
+		CAFE100000000000000013AA /* SapphireCameraExtension.systemextension in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = CAFE100000000000000001AA /* SapphireCameraExtension.systemextension */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CAFE200000000000000006BB /* SapphireAudioDriver.c in Sources */ = {isa = PBXBuildFile; fileRef = CAFE200000000000000003BB /* SapphireAudioDriver.c */; };
+		CAFE200000000000000010BB /* SapphireAudioDriver.driver in Embed Audio Driver */ = {isa = PBXBuildFile; fileRef = CAFE200000000000000001BB /* SapphireAudioDriver.driver */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CAFE200000000000000013BB /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFE200000000000000014BB /* CoreAudio.framework */; };
+		DA1D1AB72EAA76DA00E7F1B4 /* com.shariq.sapphireHelper in Embed Helper Executable */ = {isa = PBXBuildFile; fileRef = DA452EAF2EAA57C90070E5C9 /* com.shariq.sapphireHelper */; };
+		DA262AE02EA4841B0027CA69 /* OSD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA262ADF2EA4841B0027CA69 /* OSD.framework */; };
+		DA262AE62EA485150027CA69 /* CoreDisplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA262AE52EA485150027CA69 /* CoreDisplay.framework */; };
+		DA262AF52EA5D1B70027CA69 /* MultitouchSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA262AF42EA5D1B70027CA69 /* MultitouchSupport.framework */; };
+		DA48B01B2E93DF9B0099BF74 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = DA48B01A2E93DF9B0099BF74 /* SQLite */; };
+		DA5E100A304CBB63003D1D37 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DA5E1009304CBB63003D1D37 /* FirebaseAnalytics */; };
+		DA5E1010304CBB63003D1D37 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = DA5E100F304CBB63003D1D37 /* FirebaseCore */; };
+		DA5E1012304CBB63003D1D37 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = DA5E1011304CBB63003D1D37 /* FirebaseCrashlytics */; };
+		DA6344C82E5AA816007EAB5F /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52567A2E162FA900D8F42E /* ShareViewController.swift */; };
+		DA7C49992E15D33A0049937A /* wire_format.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C49942E15D33A0049937A /* wire_format.pb.swift */; };
+		DA7C499A2E15D33A0049937A /* securemessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C49922E15D33A0049937A /* securemessage.pb.swift */; };
+		DA7C499D2E15D33A0049937A /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C49962E15D33A0049937A /* Data+Extensions.swift */; };
+		DA7C499E2E15D33A0049937A /* device_to_device_messages.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C498F2E15D33A0049937A /* device_to_device_messages.pb.swift */; };
+		DA7C499F2E15D33A0049937A /* ukey.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C49932E15D33A0049937A /* ukey.pb.swift */; };
+		DA7C49A22E15D33A0049937A /* offline_wire_formats.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C49902E15D33A0049937A /* offline_wire_formats.pb.swift */; };
+		DA7C49A32E15D33A0049937A /* securegcm.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C49912E15D33A0049937A /* securegcm.pb.swift */; };
+		DA7C49A52E15D34D0049937A /* SwiftECC in Frameworks */ = {isa = PBXBuildFile; productRef = DA7C49A42E15D34D0049937A /* SwiftECC */; };
+		DA7C49A82E15D3660049937A /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = DA7C49A72E15D3660049937A /* SwiftProtobuf */; };
+		DA7C49AD2E15D3800049937A /* libNearbyShare.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7C49802E15CCA50049937A /* libNearbyShare.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		DA8A79B02E5AAE260009F091 /* TransferDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC6CBC2E16F53E00A5CF83 /* TransferDirection.swift */; };
+		DA8A79B12E5AAE260009F091 /* OutboundNearbyConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C498D2E15D33A0049937A /* OutboundNearbyConnection.swift */; };
+		DA8A79B22E5AAE260009F091 /* NearDropDisplayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5256782E162B9F00D8F42E /* NearDropDisplayState.swift */; };
+		DA8A79B32E5AAE260009F091 /* NearbyConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C498A2E15D33A0049937A /* NearbyConnection.swift */; };
+		DA8A79B42E5AAE260009F091 /* NearbyConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C498B2E15D33A0049937A /* NearbyConnectionManager.swift */; };
+		DA8A79B52E5AAE260009F091 /* DeviceListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52567C2E162FBE00D8F42E /* DeviceListCell.swift */; };
+		DA8A79B62E5AAE260009F091 /* InboundNearbyConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C49892E15D33A0049937A /* InboundNearbyConnection.swift */; };
+		DA8FB0442E7CBE9000C9BD1A /* TelephonyUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8FAF042E7CB48100C9BD1A /* TelephonyUtilities.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DA8FB0462E7CBE9300C9BD1A /* FTServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8FAF032E7CB48100C9BD1A /* FTServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DA8FB0482E7CBE9400C9BD1A /* IMSharedUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8FAF052E7CB48100C9BD1A /* IMSharedUtilities.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DA8FB04A2E7CBE9500C9BD1A /* IDS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8FAF062E7CB48100C9BD1A /* IDS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DA8FB04D2E7CC1B100C9BD1A /* IMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8FB04C2E7CC1B100C9BD1A /* IMCore.framework */; };
+		DA8FB0512E7D898F00C9BD1A /* MobileTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8FB04F2E7D898F00C9BD1A /* MobileTimer.framework */; };
+		DA8FB0532E7D898F00C9BD1A /* MobileTimerSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8FB0502E7D898F00C9BD1A /* MobileTimerSupport.framework */; };
+		DA91BE342E773AC8001E7836 /* begin_record.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE082E773AC8001E7836 /* begin_record.caf */; };
+		DA91BE352E773AC8001E7836 /* jbl_begin_short.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE032E773AC8001E7836 /* jbl_begin_short.caf */; };
+		DA91BE362E773AC8001E7836 /* multiway_leave.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDF72E773AC8001E7836 /* multiway_leave.caf */; };
+		DA91BE372E773AC8001E7836 /* empty trash.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDF92E773AC8001E7836 /* empty trash.aif */; };
+		DA91BE382E773AC8001E7836 /* burn failed.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE0A2E773AC8001E7836 /* burn failed.aif */; };
+		DA91BE392E773AC8001E7836 /* head_gestures_partial_shake.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE102E773AC8001E7836 /* head_gestures_partial_shake.caf */; };
+		DA91BE3A2E773AC8001E7836 /* media_paused.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE132E773AC8001E7836 /* media_paused.caf */; };
+		DA91BE3B2E773AC8001E7836 /* InkSoundStroke2.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDFE2E773AC8001E7836 /* InkSoundStroke2.aif */; };
+		DA91BE3C2E773AC8001E7836 /* jbl_cancel.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE042E773AC8001E7836 /* jbl_cancel.caf */; };
+		DA91BE3D2E773AC8001E7836 /* Sticky Keys OFF.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDEE2E773AC8001E7836 /* Sticky Keys OFF.aif */; };
+		DA91BE3E2E773AC8001E7836 /* Volume Mount.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE1D2E773AC8001E7836 /* Volume Mount.aif */; };
+		DA91BE3F2E773AC8001E7836 /* poof item off dock.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDF32E773AC8001E7836 /* poof item off dock.aif */; };
+		DA91BE402E773AC8001E7836 /* dtmf-0.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE242E773AC8001E7836 /* dtmf-0.caf */; };
+		DA91BE412E773AC8001E7836 /* dtmf-5.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE292E773AC8001E7836 /* dtmf-5.caf */; };
+		DA91BE422E773AC8001E7836 /* Sticky Keys Stuck.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDF02E773AC8001E7836 /* Sticky Keys Stuck.aif */; };
+		DA91BE432E773AC8001E7836 /* burn complete.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE092E773AC8001E7836 /* burn complete.aif */; };
+		DA91BE442E773AC8001E7836 /* payment_failure.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE172E773AC8001E7836 /* payment_failure.aif */; };
+		DA91BE452E773AC8001E7836 /* SentMessage.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE1B2E773AC8001E7836 /* SentMessage.caf */; };
+		DA91BE462E773AC8001E7836 /* multiway_invitation.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDF52E773AC8001E7836 /* multiway_invitation.caf */; };
+		DA91BE472E773AC8001E7836 /* move to trash.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDFA2E773AC8001E7836 /* move to trash.aif */; };
+		DA91BE482E773AC8001E7836 /* ringback_tone_ansi.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE312E773AC8001E7836 /* ringback_tone_ansi.caf */; };
+		DA91BE492E773AC8001E7836 /* dtmf-4.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE282E773AC8001E7836 /* dtmf-4.caf */; };
+		DA91BE4A2E773AC8001E7836 /* Sticky Keys Locked.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDEC2E773AC8001E7836 /* Sticky Keys Locked.aif */; };
+		DA91BE4B2E773AC8001E7836 /* InkSoundStroke3.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDFF2E773AC8001E7836 /* InkSoundStroke3.aif */; };
+		DA91BE4C2E773AC8001E7836 /* InkSoundStroke1.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDFD2E773AC8001E7836 /* InkSoundStroke1.aif */; };
+		DA91BE4D2E773AC8001E7836 /* acknowledgment_sent.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE072E773AC8001E7836 /* acknowledgment_sent.caf */; };
+		DA91BE4E2E773AC8001E7836 /* Shutter.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE1C2E773AC8001E7836 /* Shutter.aif */; };
+		DA91BE4F2E773AC8001E7836 /* Volume Unmount.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE1E2E773AC8001E7836 /* Volume Unmount.aif */; };
+		DA91BE502E773AC8001E7836 /* dtmf-7.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE2B2E773AC8001E7836 /* dtmf-7.caf */; };
+		DA91BE512E773AC8001E7836 /* call_waiting_tone_ansi.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE222E773AC8001E7836 /* call_waiting_tone_ansi.caf */; };
+		DA91BE522E773AC8001E7836 /* Sticky Keys MODIFER.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDED2E773AC8001E7836 /* Sticky Keys MODIFER.aif */; };
+		DA91BE532E773AC8001E7836 /* jbl_begin.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE022E773AC8001E7836 /* jbl_begin.caf */; };
+		DA91BE542E773AC8001E7836 /* Slow Keys, Key Registered.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDEB2E773AC8001E7836 /* Slow Keys, Key Registered.aif */; };
+		DA91BE552E773AC8001E7836 /* dtmf-9.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE2D2E773AC8001E7836 /* dtmf-9.caf */; };
+		DA91BE562E773AC8001E7836 /* mic_unmute.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE152E773AC8001E7836 /* mic_unmute.caf */; };
+		DA91BE572E773AC8001E7836 /* ringback_tone_cept.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE322E773AC8001E7836 /* ringback_tone_cept.caf */; };
+		DA91BE582E773AC8001E7836 /* InkSoundStroke4.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE002E773AC8001E7836 /* InkSoundStroke4.aif */; };
+		DA91BE592E773AC8001E7836 /* Mouse Keys OFF.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDE82E773AC8001E7836 /* Mouse Keys OFF.aif */; };
+		DA91BE5A2E773AC8001E7836 /* dtmf-1.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE252E773AC8001E7836 /* dtmf-1.caf */; };
+		DA91BE5B2E773AC8001E7836 /* Slow Keys, 1st Key Pressed.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDEA2E773AC8001E7836 /* Slow Keys, 1st Key Pressed.aif */; };
+		DA91BE5C2E773AC8001E7836 /* mic_unmute_fail.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE162E773AC8001E7836 /* mic_unmute_fail.caf */; };
+		DA91BE5D2E773AC8001E7836 /* end_call_tone_cept.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE302E773AC8001E7836 /* end_call_tone_cept.caf */; };
+		DA91BE5F2E773AC8001E7836 /* mic_mute.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE142E773AC8001E7836 /* mic_mute.caf */; };
+		DA91BE602E773AC8001E7836 /* dtmf-3.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE272E773AC8001E7836 /* dtmf-3.caf */; };
+		DA91BE612E773AC8001E7836 /* Sticky Keys ON.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDEF2E773AC8001E7836 /* Sticky Keys ON.aif */; };
+		DA91BE622E773AC8001E7836 /* InkSoundBecomeMouse.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDFC2E773AC8001E7836 /* InkSoundBecomeMouse.aif */; };
+		DA91BE632E773AC8001E7836 /* Mouse Keys ON.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDE92E773AC8001E7836 /* Mouse Keys ON.aif */; };
+		DA91BE642E773AC8001E7836 /* end_record.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE0B2E773AC8001E7836 /* end_record.caf */; };
+		DA91BE652E773AC8001E7836 /* Screen Capture.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE192E773AC8001E7836 /* Screen Capture.aif */; };
+		DA91BE662E773AC8001E7836 /* multiway_join.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDF62E773AC8001E7836 /* multiway_join.caf */; };
+		DA91BE672E773AC8001E7836 /* dtmf-2.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE262E773AC8001E7836 /* dtmf-2.caf */; };
+		DA91BE682E773AC8001E7836 /* busy_tone_ansi.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE202E773AC8001E7836 /* busy_tone_ansi.caf */; };
+		DA91BE692E773AC8001E7836 /* dtmf-star.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE2F2E773AC8001E7836 /* dtmf-star.caf */; };
+		DA91BE6A2E773AC8001E7836 /* dtmf-pound.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE2E2E773AC8001E7836 /* dtmf-pound.caf */; };
+		DA91BE6B2E773AC8001E7836 /* head_gestures_partial_nod.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE0F2E773AC8001E7836 /* head_gestures_partial_nod.caf */; };
+		DA91BE6C2E773AC8001E7836 /* payment_success.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE182E773AC8001E7836 /* payment_success.aif */; };
+		DA91BE6D2E773AC8001E7836 /* media_handoff.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE122E773AC8001E7836 /* media_handoff.caf */; };
+		DA91BE6E2E773AC8001E7836 /* call_waiting_tone_cept.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE232E773AC8001E7836 /* call_waiting_tone_cept.caf */; };
+		DA91BE6F2E773AC8001E7836 /* Grab.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE0C2E773AC8001E7836 /* Grab.aif */; };
+		DA91BE702E773AC8001E7836 /* dtmf-6.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE2A2E773AC8001E7836 /* dtmf-6.caf */; };
+		DA91BE712E773AC8001E7836 /* jbl_confirm.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE052E773AC8001E7836 /* jbl_confirm.caf */; };
+		DA91BE722E773AC8001E7836 /* screen_sharing_started.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE1A2E773AC8001E7836 /* screen_sharing_started.caf */; };
+		DA91BE732E773AC8001E7836 /* dtmf-8.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE2C2E773AC8001E7836 /* dtmf-8.caf */; };
+		DA91BE742E773AC8001E7836 /* head_gestures_double_nod.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE0D2E773AC8001E7836 /* head_gestures_double_nod.caf */; };
+		DA91BE752E773AC8001E7836 /* head_gestures_double_shake.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE0E2E773AC8001E7836 /* head_gestures_double_shake.caf */; };
+		DA91BE762E773AC8001E7836 /* Media Keys.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE112E773AC8001E7836 /* Media Keys.aif */; };
+		DA91BE772E773AC8001E7836 /* drag to trash.aif in Resources */ = {isa = PBXBuildFile; fileRef = DA91BDF22E773AC8001E7836 /* drag to trash.aif */; };
+		DAA7D9142E848D340032748B /* busy_tone_cept.caf in Resources */ = {isa = PBXBuildFile; fileRef = DA91BE212E773AC8001E7836 /* busy_tone_cept.caf */; };
+		DAB2D08F2E78CE34002A9778 /* DisplayServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9385452E17B443006C5361 /* DisplayServices.framework */; };
+		DABC6CDD2E17457A00A5CF83 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABC6CDB2E17457700A5CF83 /* IOKit.framework */; };
+		DABC6CDF2E17458500A5CF83 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7C49B92E15DB160049937A /* UserNotifications.framework */; };
+		DABC6CE12E17458600A5CF83 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7C49B82E15DB160049937A /* UserNotificationsUI.framework */; };
+		DABC6CE32E1749CA00A5CF83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABC6CD72E17455F00A5CF83 /* CoreGraphics.framework */; };
+		DACA665D2E8B5FCE0056ED60 /* sharing_enums.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACA665B2E8B5FCE0056ED60 /* sharing_enums.pb.swift */; };
+		DACA665E2E8B5FCE0056ED60 /* SymmetricKey+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACA665C2E8B5FCE0056ED60 /* SymmetricKey+Extensions.swift */; };
+		DACA66622E8B70E60056ED60 /* QRCode in Frameworks */ = {isa = PBXBuildFile; productRef = DACA66612E8B70E60056ED60 /* QRCode */; };
+		DACBB01D2E20321D00740C9B /* libNearbyShare.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA7C49802E15CCA50049937A /* libNearbyShare.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		DAF7D8AE2E20801E00AB0820 /* SwiftProtobuf_SwiftProtobuf.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAF7D8AD2E20801E00AB0820 /* SwiftProtobuf_SwiftProtobuf.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1CE00000000000000001AA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE000000000000000002AA /* main.swift */; };
+		F1CE00000000000000002AA /* SapphireFinderSync.appex in Embed Finder Extensions */ = {isa = PBXBuildFile; fileRef = F1CE000000000000000001AA /* SapphireFinderSync.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F2DE000000000000000013BB /* FileProviderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DE000000000000000002BB /* FileProviderExtension.swift */; };
+		F2DE000000000000000018BB /* SapphireFileProvider.appex in Embed Finder Extensions */ = {isa = PBXBuildFile; fileRef = F2DE000000000000000001BB /* SapphireFileProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F3A600000000000000000003 /* Yams in Frameworks */ = {isa = PBXBuildFile; productRef = F3A600000000000000000002 /* Yams */; };
+		F4C6BD0940E54C6EBC832604 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FD831867A2F947938E17E286 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A17D0000000000000000000F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA46CF6E2DCBCA0000F00EC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A17D0000000000000000000E;
+			remoteInfo = SapphireAndroidWidgets;
+		};
+		CAFE100000000000000015AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA46CF6E2DCBCA0000F00EC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAFE10000000000000000EAA;
+			remoteInfo = SapphireCameraExtension;
+		};
+		CAFE200000000000000012BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA46CF6E2DCBCA0000F00EC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAFE20000000000000000BBB;
+			remoteInfo = SapphireAudioDriver;
+		};
+		DA452EB82EAA58100070E5C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA46CF6E2DCBCA0000F00EC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA452EAE2EAA57C90070E5C9;
+			remoteInfo = com.shariq.sapphireHelper;
+		};
+		DA46CF802DCBCA0100F00EC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA46CF6E2DCBCA0000F00EC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA46CF752DCBCA0000F00EC5;
+			remoteInfo = Sapphire;
+		};
+		DA7C49AF2E15D3800049937A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA46CF6E2DCBCA0000F00EC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA7C497F2E15CCA50049937A;
+			remoteInfo = NearbyShare;
+		};
+		F1CE00000000000000000DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA46CF6E2DCBCA0000F00EC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1CE000000000000000008AA;
+			remoteInfo = SapphireFinderSync;
+		};
+		F2DE000000000000000012BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA46CF6E2DCBCA0000F00EC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2DE00000000000000000ABB;
+			remoteInfo = SapphireFileProvider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A17D0000000000000000000D /* Embed Widget Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				A17D00000000000000000009 /* SapphireAndroidWidgets.appex in Embed Widget Extensions */,
+			);
+			name = "Embed Widget Extensions";
+		};
+		C0DE40000000000000000001 /* Embed iDevice Tools */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = libimobiledevice/bin;
+			dstSubfolder = Resources;
+			files = (
+				C0DE20000000000000000001 /* comptest in Embed iDevice Tools */,
+				C0DE20000000000000000002 /* idevice_id in Embed iDevice Tools */,
+				C0DE20000000000000000003 /* ideviceinfo in Embed iDevice Tools */,
+				C0DE20000000000000000004 /* idevicesyslog in Embed iDevice Tools */,
+				C0DE20000000000000000005 /* wificonnection in Embed iDevice Tools */,
+			);
+			name = "Embed iDevice Tools";
+		};
+		C0DE40000000000000000002 /* Embed iDevice Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = libimobiledevice/lib;
+			dstSubfolder = Resources;
+			files = (
+				C0DE20000000000000000006 /* libcrypto.3.dylib in Embed iDevice Libraries */,
+				C0DE20000000000000000007 /* libimobiledevice-1.0.6.dylib in Embed iDevice Libraries */,
+				C0DE20000000000000000008 /* libimobiledevice-glue-1.0.0.dylib in Embed iDevice Libraries */,
+				C0DE20000000000000000009 /* libplist-2.0.4.dylib in Embed iDevice Libraries */,
+				C0DE2000000000000000000A /* libssl.3.dylib in Embed iDevice Libraries */,
+				C0DE2000000000000000000B /* libusbmuxd-2.0.6.dylib in Embed iDevice Libraries */,
+			);
+			name = "Embed iDevice Libraries";
+		};
+		CAFE100000000000000012AA /* Embed System Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = Contents/Library/SystemExtensions;
+			dstSubfolder = Wrapper;
+			files = (
+				CAFE100000000000000013AA /* SapphireCameraExtension.systemextension in Embed System Extensions */,
+			);
+			name = "Embed System Extensions";
+		};
+		CAFE20000000000000000FBB /* Embed Audio Driver */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = Contents/Resources;
+			dstSubfolder = Wrapper;
+			files = (
+				CAFE200000000000000010BB /* SapphireAudioDriver.driver in Embed Audio Driver */,
+			);
+			name = "Embed Audio Driver";
+		};
+		DA262B242EA942750027CA69 /* Embed Helper Executable */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Executables;
+			files = (
+				DA1D1AB72EAA76DA00E7F1B4 /* com.shariq.sapphireHelper in Embed Helper Executable */,
+			);
+			name = "Embed Helper Executable";
+		};
+		DAA7D9D22E8633B20032748B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolder = None;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		DABFA98B2EBFBA35000C5A8B /* Embed Helper LaunchDaemon Plist */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = Contents/Library/LaunchDaemons;
+			dstSubfolder = Wrapper;
+			files = (
+			);
+			name = "Embed Helper LaunchDaemon Plist";
+		};
+		DAE70B782E12300B001F0890 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Frameworks;
+			files = (
+				DACBB01D2E20321D00740C9B /* libNearbyShare.dylib in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+		};
+		DAF7D8AC2E207C5100AB0820 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Frameworks;
+			files = (
+				DAF7D8AE2E20801E00AB0820 /* SwiftProtobuf_SwiftProtobuf.bundle in CopyFiles */,
+			);
+		};
+		F1CE00000000000000003AA /* Embed Finder Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				F1CE00000000000000002AA /* SapphireFinderSync.appex in Embed Finder Extensions */,
+				F2DE000000000000000018BB /* SapphireFileProvider.appex in Embed Finder Extensions */,
+			);
+			name = "Embed Finder Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A17D00000000000000000001 /* SapphireAndroidWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SapphireAndroidWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A17D00000000000000000003 /* SapphireAndroidWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SapphireAndroidWidgets.swift; sourceTree = "<group>"; };
+		A17D00000000000000000004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A17D00000000000000000005 /* SapphireAndroidWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SapphireAndroidWidgets.entitlements; sourceTree = "<group>"; };
+		A17D00000000000000000006 /* AndroidWidgetSnapshotStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AndroidWidgetSnapshotStore.swift; path = Sapphire/Services/AndroidWidgetSnapshotStore.swift; sourceTree = SOURCE_ROOT; };
+		C0DE10000000000000000001 /* comptest */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = comptest; sourceTree = "<group>"; };
+		C0DE10000000000000000002 /* idevice_id */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = idevice_id; sourceTree = "<group>"; };
+		C0DE10000000000000000003 /* ideviceinfo */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ideviceinfo; sourceTree = "<group>"; };
+		C0DE10000000000000000004 /* idevicesyslog */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = idevicesyslog; sourceTree = "<group>"; };
+		C0DE10000000000000000005 /* wificonnection */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = wificonnection; sourceTree = "<group>"; };
+		C0DE10000000000000000006 /* libcrypto.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcrypto.3.dylib; sourceTree = "<group>"; };
+		C0DE10000000000000000007 /* libimobiledevice-1.0.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libimobiledevice-1.0.6.dylib"; sourceTree = "<group>"; };
+		C0DE10000000000000000008 /* libimobiledevice-glue-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libimobiledevice-glue-1.0.0.dylib"; sourceTree = "<group>"; };
+		C0DE10000000000000000009 /* libplist-2.0.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libplist-2.0.4.dylib"; sourceTree = "<group>"; };
+		C0DE1000000000000000000A /* libssl.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libssl.3.dylib; sourceTree = "<group>"; };
+		C0DE1000000000000000000B /* libusbmuxd-2.0.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libusbmuxd-2.0.6.dylib"; sourceTree = "<group>"; };
+		CAFE100000000000000001AA /* SapphireCameraExtension.systemextension */ = {isa = PBXFileReference; explicitFileType = "wrapper.system-extension"; includeInIndex = 0; path = SapphireCameraExtension.systemextension; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAFE100000000000000003AA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = PublicExtensionStubs/Camera/main.swift; sourceTree = SOURCE_ROOT; };
+		CAFE100000000000000004AA /* SapphireCameraProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SapphireCameraProvider.swift; sourceTree = "<group>"; };
+		CAFE100000000000000005AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAFE100000000000000006AA /* SapphireCameraExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SapphireCameraExtension.entitlements; sourceTree = "<group>"; };
+		CAFE10000000000000000AAA /* SapphireCameraIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SapphireCameraIdentifiers.swift; path = Sapphire/Services/Continuity/SapphireCameraIdentifiers.swift; sourceTree = SOURCE_ROOT; };
+		CAFE200000000000000001BB /* SapphireAudioDriver.driver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SapphireAudioDriver.driver; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAFE200000000000000003BB /* SapphireAudioDriver.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SapphireAudioDriver.c; path = PublicExtensionStubs/AudioDriver/SapphireAudioDriver.c; sourceTree = SOURCE_ROOT; };
+		CAFE200000000000000004BB /* SapphireMicRing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SapphireMicRing.h; sourceTree = "<group>"; };
+		CAFE200000000000000005BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAFE200000000000000014BB /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		DA262ADF2EA4841B0027CA69 /* OSD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSD.framework; path = ../../../../System/Library/PrivateFrameworks/OSD.framework; sourceTree = "<group>"; };
+		DA262AE22EA484A70027CA69 /* Sapphire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Sapphire.xcodeproj; sourceTree = "<group>"; };
+		DA262AE52EA485150027CA69 /* CoreDisplay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreDisplay.framework; path = ../../../../System/Library/Frameworks/CoreDisplay.framework; sourceTree = "<group>"; };
+		DA262AF02EA5D1940027CA69 /* MultitouchSessionFilterSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultitouchSessionFilterSupport.framework; path = ../../../../System/Library/PrivateFrameworks/MultitouchSessionFilterSupport.framework; sourceTree = "<group>"; };
+		DA262AF32EA5D1A20027CA69 /* PrivateFrameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PrivateFrameworks; path = ../../../../System/Library/PrivateFrameworks; sourceTree = "<group>"; };
+		DA262AF42EA5D1B70027CA69 /* MultitouchSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultitouchSupport.framework; path = ../../../../System/Library/PrivateFrameworks/MultitouchSupport.framework; sourceTree = "<group>"; };
+		DA452EAF2EAA57C90070E5C9 /* com.shariq.sapphireHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.shariq.sapphireHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA46CF762DCBCA0000F00EC5 /* Sapphire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sapphire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA46CF872DCBCA0100F00EC5 /* SapphireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SapphireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5256782E162B9F00D8F42E /* NearDropDisplayState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearDropDisplayState.swift; sourceTree = "<group>"; };
+		DA52567A2E162FA900D8F42E /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		DA52567C2E162FBE00D8F42E /* DeviceListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListCell.swift; sourceTree = "<group>"; };
+		DA69D6282E8442F5007FD12D /* dylib1.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = dylib1.o; path = usr/lib/dylib1.o; sourceTree = SDKROOT; };
+		DA6BC4312E54F7D6007C2A51 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		DA7C49802E15CCA50049937A /* libNearbyShare.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libNearbyShare.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7C49892E15D33A0049937A /* InboundNearbyConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboundNearbyConnection.swift; sourceTree = "<group>"; };
+		DA7C498A2E15D33A0049937A /* NearbyConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyConnection.swift; sourceTree = "<group>"; };
+		DA7C498B2E15D33A0049937A /* NearbyConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyConnectionManager.swift; sourceTree = "<group>"; };
+		DA7C498D2E15D33A0049937A /* OutboundNearbyConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutboundNearbyConnection.swift; sourceTree = "<group>"; };
+		DA7C498F2E15D33A0049937A /* device_to_device_messages.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = device_to_device_messages.pb.swift; sourceTree = "<group>"; };
+		DA7C49902E15D33A0049937A /* offline_wire_formats.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = offline_wire_formats.pb.swift; sourceTree = "<group>"; };
+		DA7C49912E15D33A0049937A /* securegcm.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = securegcm.pb.swift; sourceTree = "<group>"; };
+		DA7C49922E15D33A0049937A /* securemessage.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = securemessage.pb.swift; sourceTree = "<group>"; };
+		DA7C49932E15D33A0049937A /* ukey.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ukey.pb.swift; sourceTree = "<group>"; };
+		DA7C49942E15D33A0049937A /* wire_format.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wire_format.pb.swift; sourceTree = "<group>"; };
+		DA7C49962E15D33A0049937A /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		DA7C49B82E15DB160049937A /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		DA7C49B92E15DB160049937A /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		DA8FAF032E7CB48100C9BD1A /* FTServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FTServices.framework; path = ../../../../System/Library/PrivateFrameworks/FTServices.framework; sourceTree = "<group>"; };
+		DA8FAF042E7CB48100C9BD1A /* TelephonyUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TelephonyUtilities.framework; path = ../../../../System/Library/PrivateFrameworks/TelephonyUtilities.framework; sourceTree = "<group>"; };
+		DA8FAF052E7CB48100C9BD1A /* IMSharedUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IMSharedUtilities.framework; path = ../../../../System/Library/PrivateFrameworks/IMSharedUtilities.framework; sourceTree = "<group>"; };
+		DA8FAF062E7CB48100C9BD1A /* IDS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDS.framework; path = ../../../../System/Library/PrivateFrameworks/IDS.framework; sourceTree = "<group>"; };
+		DA8FB04C2E7CC1B100C9BD1A /* IMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IMCore.framework; path = ../../../../System/Library/PrivateFrameworks/IMCore.framework; sourceTree = "<group>"; };
+		DA8FB04F2E7D898F00C9BD1A /* MobileTimer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileTimer.framework; path = ../../../../System/Library/PrivateFrameworks/MobileTimer.framework; sourceTree = "<group>"; };
+		DA8FB0502E7D898F00C9BD1A /* MobileTimerSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileTimerSupport.framework; path = ../../../../System/Library/PrivateFrameworks/MobileTimerSupport.framework; sourceTree = "<group>"; };
+		DA91BDE82E773AC8001E7836 /* Mouse Keys OFF.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mouse Keys OFF.aif"; sourceTree = "<group>"; };
+		DA91BDE92E773AC8001E7836 /* Mouse Keys ON.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mouse Keys ON.aif"; sourceTree = "<group>"; };
+		DA91BDEA2E773AC8001E7836 /* Slow Keys, 1st Key Pressed.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Slow Keys, 1st Key Pressed.aif"; sourceTree = "<group>"; };
+		DA91BDEB2E773AC8001E7836 /* Slow Keys, Key Registered.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Slow Keys, Key Registered.aif"; sourceTree = "<group>"; };
+		DA91BDEC2E773AC8001E7836 /* Sticky Keys Locked.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sticky Keys Locked.aif"; sourceTree = "<group>"; };
+		DA91BDED2E773AC8001E7836 /* Sticky Keys MODIFER.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sticky Keys MODIFER.aif"; sourceTree = "<group>"; };
+		DA91BDEE2E773AC8001E7836 /* Sticky Keys OFF.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sticky Keys OFF.aif"; sourceTree = "<group>"; };
+		DA91BDEF2E773AC8001E7836 /* Sticky Keys ON.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sticky Keys ON.aif"; sourceTree = "<group>"; };
+		DA91BDF02E773AC8001E7836 /* Sticky Keys Stuck.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sticky Keys Stuck.aif"; sourceTree = "<group>"; };
+		DA91BDF22E773AC8001E7836 /* drag to trash.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "drag to trash.aif"; sourceTree = "<group>"; };
+		DA91BDF32E773AC8001E7836 /* poof item off dock.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "poof item off dock.aif"; sourceTree = "<group>"; };
+		DA91BDF52E773AC8001E7836 /* multiway_invitation.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = multiway_invitation.caf; sourceTree = "<group>"; };
+		DA91BDF62E773AC8001E7836 /* multiway_join.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = multiway_join.caf; sourceTree = "<group>"; };
+		DA91BDF72E773AC8001E7836 /* multiway_leave.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = multiway_leave.caf; sourceTree = "<group>"; };
+		DA91BDF92E773AC8001E7836 /* empty trash.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "empty trash.aif"; sourceTree = "<group>"; };
+		DA91BDFA2E773AC8001E7836 /* move to trash.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "move to trash.aif"; sourceTree = "<group>"; };
+		DA91BDFC2E773AC8001E7836 /* InkSoundBecomeMouse.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = InkSoundBecomeMouse.aif; sourceTree = "<group>"; };
+		DA91BDFD2E773AC8001E7836 /* InkSoundStroke1.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = InkSoundStroke1.aif; sourceTree = "<group>"; };
+		DA91BDFE2E773AC8001E7836 /* InkSoundStroke2.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = InkSoundStroke2.aif; sourceTree = "<group>"; };
+		DA91BDFF2E773AC8001E7836 /* InkSoundStroke3.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = InkSoundStroke3.aif; sourceTree = "<group>"; };
+		DA91BE002E773AC8001E7836 /* InkSoundStroke4.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = InkSoundStroke4.aif; sourceTree = "<group>"; };
+		DA91BE022E773AC8001E7836 /* jbl_begin.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = jbl_begin.caf; sourceTree = "<group>"; };
+		DA91BE032E773AC8001E7836 /* jbl_begin_short.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = jbl_begin_short.caf; sourceTree = "<group>"; };
+		DA91BE042E773AC8001E7836 /* jbl_cancel.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = jbl_cancel.caf; sourceTree = "<group>"; };
+		DA91BE052E773AC8001E7836 /* jbl_confirm.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = jbl_confirm.caf; sourceTree = "<group>"; };
+		DA91BE072E773AC8001E7836 /* acknowledgment_sent.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = acknowledgment_sent.caf; sourceTree = "<group>"; };
+		DA91BE082E773AC8001E7836 /* begin_record.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = begin_record.caf; sourceTree = "<group>"; };
+		DA91BE092E773AC8001E7836 /* burn complete.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "burn complete.aif"; sourceTree = "<group>"; };
+		DA91BE0A2E773AC8001E7836 /* burn failed.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "burn failed.aif"; sourceTree = "<group>"; };
+		DA91BE0B2E773AC8001E7836 /* end_record.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = end_record.caf; sourceTree = "<group>"; };
+		DA91BE0C2E773AC8001E7836 /* Grab.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Grab.aif; sourceTree = "<group>"; };
+		DA91BE0D2E773AC8001E7836 /* head_gestures_double_nod.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = head_gestures_double_nod.caf; sourceTree = "<group>"; };
+		DA91BE0E2E773AC8001E7836 /* head_gestures_double_shake.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = head_gestures_double_shake.caf; sourceTree = "<group>"; };
+		DA91BE0F2E773AC8001E7836 /* head_gestures_partial_nod.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = head_gestures_partial_nod.caf; sourceTree = "<group>"; };
+		DA91BE102E773AC8001E7836 /* head_gestures_partial_shake.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = head_gestures_partial_shake.caf; sourceTree = "<group>"; };
+		DA91BE112E773AC8001E7836 /* Media Keys.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Media Keys.aif"; sourceTree = "<group>"; };
+		DA91BE122E773AC8001E7836 /* media_handoff.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = media_handoff.caf; sourceTree = "<group>"; };
+		DA91BE132E773AC8001E7836 /* media_paused.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = media_paused.caf; sourceTree = "<group>"; };
+		DA91BE142E773AC8001E7836 /* mic_mute.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mic_mute.caf; sourceTree = "<group>"; };
+		DA91BE152E773AC8001E7836 /* mic_unmute.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mic_unmute.caf; sourceTree = "<group>"; };
+		DA91BE162E773AC8001E7836 /* mic_unmute_fail.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mic_unmute_fail.caf; sourceTree = "<group>"; };
+		DA91BE172E773AC8001E7836 /* payment_failure.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = payment_failure.aif; sourceTree = "<group>"; };
+		DA91BE182E773AC8001E7836 /* payment_success.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = payment_success.aif; sourceTree = "<group>"; };
+		DA91BE192E773AC8001E7836 /* Screen Capture.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Screen Capture.aif"; sourceTree = "<group>"; };
+		DA91BE1A2E773AC8001E7836 /* screen_sharing_started.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = screen_sharing_started.caf; sourceTree = "<group>"; };
+		DA91BE1B2E773AC8001E7836 /* SentMessage.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SentMessage.caf; sourceTree = "<group>"; };
+		DA91BE1C2E773AC8001E7836 /* Shutter.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shutter.aif; sourceTree = "<group>"; };
+		DA91BE1D2E773AC8001E7836 /* Volume Mount.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Volume Mount.aif"; sourceTree = "<group>"; };
+		DA91BE1E2E773AC8001E7836 /* Volume Unmount.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Volume Unmount.aif"; sourceTree = "<group>"; };
+		DA91BE202E773AC8001E7836 /* busy_tone_ansi.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = busy_tone_ansi.caf; sourceTree = "<group>"; };
+		DA91BE212E773AC8001E7836 /* busy_tone_cept.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = busy_tone_cept.caf; sourceTree = "<group>"; };
+		DA91BE222E773AC8001E7836 /* call_waiting_tone_ansi.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = call_waiting_tone_ansi.caf; sourceTree = "<group>"; };
+		DA91BE232E773AC8001E7836 /* call_waiting_tone_cept.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = call_waiting_tone_cept.caf; sourceTree = "<group>"; };
+		DA91BE242E773AC8001E7836 /* dtmf-0.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dtmf-0.caf"; sourceTree = "<group>"; };
+		DA91BE252E773AC8001E7836 /* dtmf-1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dtmf-1.caf"; sourceTree = "<group>"; };
+		DA91BE262E773AC8001E7836 /* dtmf-2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dtmf-2.caf"; sourceTree = "<group>"; };
+		DA91BE272E773AC8001E7836 /* dtmf-3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dtmf-3.caf"; sourceTree = "<group>"; };
+		DA91BE282E773AC8001E7836 /* dtmf-4.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dtmf-4.caf"; sourceTree = "<group>"; };
+		DA91BE292E773AC8001E7836 /* dtmf-5.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dtmf-5.caf"; sourceTree = "<group>"; };
+		DA91BE2A2E773AC8001E7836 /* dtmf-6.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dtmf-6.caf"; sourceTree = "<group>"; };
+		DA91BE2B2E773AC8001E7836 /* dtmf-7.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dtmf-7.caf"; sourceTree = "<group>"; };
+		DA91BE2C2E773AC8001E7836 /* dtmf-8.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dtmf-8.caf"; sourceTree = "<group>"; };
+		DA91BE2D2E773AC8001E7836 /* dtmf-9.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dtmf-9.caf"; sourceTree = "<group>"; };
+		DA91BE2E2E773AC8001E7836 /* dtmf-pound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dtmf-pound.caf"; sourceTree = "<group>"; };
+		DA91BE2F2E773AC8001E7836 /* dtmf-star.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dtmf-star.caf"; sourceTree = "<group>"; };
+		DA91BE302E773AC8001E7836 /* end_call_tone_cept.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = end_call_tone_cept.caf; sourceTree = "<group>"; };
+		DA91BE312E773AC8001E7836 /* ringback_tone_ansi.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ringback_tone_ansi.caf; sourceTree = "<group>"; };
+		DA91BE322E773AC8001E7836 /* ringback_tone_cept.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ringback_tone_cept.caf; sourceTree = "<group>"; };
+		DA9385432E17B2A4006C5361 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DA9385452E17B443006C5361 /* DisplayServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DisplayServices.framework; path = ../../../../System/Library/PrivateFrameworks/DisplayServices.framework; sourceTree = "<group>"; };
+		DAA7D9D42E8633B20032748B /* abt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = abt; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB112522EAAE7EB007AEA73 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		DAB112542EAAE7F3007AEA73 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		DAB112562EAAEA32007AEA73 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		DABC6CBC2E16F53E00A5CF83 /* TransferDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDirection.swift; sourceTree = "<group>"; };
+		DABC6CCF2E173F0600A5CF83 /* BezelServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BezelServices.framework; path = ../../../../System/Library/PrivateFrameworks/BezelServices.framework; sourceTree = "<group>"; };
+		DABC6CD72E17455F00A5CF83 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DABC6CDB2E17457700A5CF83 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		DABC6D012E177F6100A5CF83 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		DACA665B2E8B5FCE0056ED60 /* sharing_enums.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sharing_enums.pb.swift; sourceTree = "<group>"; };
+		DACA665C2E8B5FCE0056ED60 /* SymmetricKey+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SymmetricKey+Extensions.swift"; sourceTree = "<group>"; };
+		DACE9E002EADC9D000D01379 /* DriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DriverKit.framework; path = System/Library/Frameworks/DriverKit.framework; sourceTree = SDKROOT; };
+		DAF7D8AD2E20801E00AB0820 /* SwiftProtobuf_SwiftProtobuf.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SwiftProtobuf_SwiftProtobuf.bundle; sourceTree = "<group>"; };
+		DAF9CD382E54EA4600348E9F /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		F1CE000000000000000001AA /* SapphireFinderSync.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SapphireFinderSync.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1CE000000000000000002AA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = PublicExtensionStubs/FinderSync/main.swift; sourceTree = SOURCE_ROOT; };
+		F1CE000000000000000004AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1CE000000000000000005AA /* SapphireFinderSync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SapphireFinderSync.entitlements; sourceTree = "<group>"; };
+		F2DE000000000000000001BB /* SapphireFileProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SapphireFileProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DE000000000000000002BB /* FileProviderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FileProviderExtension.swift; path = PublicExtensionStubs/FileProvider/FileProviderExtension.swift; sourceTree = SOURCE_ROOT; };
+		F2DE000000000000000003BB /* FileProviderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderItem.swift; sourceTree = "<group>"; };
+		F2DE000000000000000004BB /* FileProviderEnumerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderEnumerator.swift; sourceTree = "<group>"; };
+		F2DE000000000000000005BB /* HostConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostConnection.swift; sourceTree = "<group>"; };
+		F2DE000000000000000006BB /* ContinuityFileProviderShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContinuityFileProviderShared.swift; path = Sapphire/Services/Continuity/FileProvider/ContinuityFileProviderShared.swift; sourceTree = SOURCE_ROOT; };
+		F2DE000000000000000007BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2DE000000000000000008BB /* SapphireFileProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SapphireFileProvider.entitlements; sourceTree = "<group>"; };
+		F2DE000000000000000019BB /* PhoneDrive.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PhoneDrive.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DA1D1AB22EAA74CB00E7F1B4 /* Exceptions for "com.shariq.sapphireHelper" folder in "Sapphire" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CodesignCheckError.swift,
+				Constants.swift,
+				HelperError.swift,
+				HelperProtocol.swift,
+				Protocols.swift,
+				SensorNameMap.swift,
+				values.swift,
+			);
+			target = DA46CF752DCBCA0000F00EC5 /* Sapphire */;
+		};
+		DA7C49BE2E15DC180049937A /* Exceptions for "ObjC" folder in "NearbyShare" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Bridging-Header.h",
+				Miscellaneous/NDNotificationCenterHackery.h,
+				Miscellaneous/NDNotificationCenterHackery.m,
+				PrivateAPI.h,
+			);
+			target = DA7C497F2E15CCA50049937A /* NearbyShare */;
+		};
+		DA8FAEEA2E7CA06700C9BD1A /* Exceptions for "ObjC" folder in "Sapphire" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Miscellaneous/NDNotificationCenterHackery.m,
+			);
+			target = DA46CF752DCBCA0000F00EC5 /* Sapphire */;
+		};
+		DA91BDAB2E75DDE2001E7836 /* Exceptions for "Sapphire" folder in "Sapphire" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				App/Info.plist,
+				Services/Music/MediaRemoteAdapter.framework,
+			);
+			target = DA46CF752DCBCA0000F00EC5 /* Sapphire */;
+		};
+		DAA7D9DC2E8634280032748B /* Exceptions for "Sapphire" folder in "abt" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Services/Bluetooth/btdDevice.swift,
+			);
+			target = DAA7D9D32E8633B20032748B /* abt */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		DA91BDAC2E75DDE2001E7836 /* Exceptions for "Sapphire" folder in "Copy Bundle Resources" phase from "Sapphire" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = DA46CF742DCBCA0000F00EC5 /* Resources */;
+			membershipExceptions = (
+				Services/Music/MediaRemoteAdapter.framework,
+			);
+		};
+		DABFA98F2EBFBA8B000C5A8B /* Exceptions for "com.shariq.sapphireHelper" folder in "Embed Helper LaunchDaemon Plist" phase from "Sapphire" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = DABFA98B2EBFBA35000C5A8B /* Embed Helper LaunchDaemon Plist */;
+			membershipExceptions = (
+				com.shariq.sapphireHelper.plist,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DA183FC92E122AF30056667D /* Sapphire */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DA91BDAB2E75DDE2001E7836 /* Exceptions for "Sapphire" folder in "Sapphire" target */,
+				DA91BDAC2E75DDE2001E7836 /* Exceptions for "Sapphire" folder in "Copy Bundle Resources" phase from "Sapphire" target */,
+				DAA7D9DC2E8634280032748B /* Exceptions for "Sapphire" folder in "abt" target */,
+			);
+			path = Sapphire;
+			sourceTree = "<group>";
+		};
+		DA452EB02EAA57C90070E5C9 /* com.shariq.sapphireHelper */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DA1D1AB22EAA74CB00E7F1B4 /* Exceptions for "com.shariq.sapphireHelper" folder in "Sapphire" target */,
+				DABFA98F2EBFBA8B000C5A8B /* Exceptions for "com.shariq.sapphireHelper" folder in "Embed Helper LaunchDaemon Plist" phase from "Sapphire" target */,
+			);
+			path = com.shariq.sapphireHelper;
+			sourceTree = "<group>";
+		};
+		DA46CF7F2DCBCA0100F00EC5 /* SapphireTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SapphireTests;
+			sourceTree = "<group>";
+		};
+		DA789CFA2FAFC26000EB906E /* Volume */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Volume;
+			sourceTree = "<group>";
+		};
+		DA7C49B62E15D7360049937A /* ObjC */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DA8FAEEA2E7CA06700C9BD1A /* Exceptions for "ObjC" folder in "Sapphire" target */,
+				DA7C49BE2E15DC180049937A /* Exceptions for "ObjC" folder in "NearbyShare" target */,
+			);
+			path = ObjC;
+			sourceTree = "<group>";
+		};
+		DA8FB0272E7CB76B00C9BD1A /* PrivateHeaders */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PrivateHeaders;
+			sourceTree = "<group>";
+		};
+		DAA7D9D52E8633B20032748B /* abt */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = abt;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A17D0000000000000000000A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		CAFE10000000000000000CAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		CAFE200000000000000008BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				CAFE200000000000000013BB /* CoreAudio.framework in Frameworks */,
+			);
+		};
+		DA452EAC2EAA57C90070E5C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		DA46CF732DCBCA0000F00EC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				F3A600000000000000000003 /* Yams in Frameworks */,
+				DA8FB0482E7CBE9400C9BD1A /* IMSharedUtilities.framework in Frameworks */,
+				DABC6CE32E1749CA00A5CF83 /* CoreGraphics.framework in Frameworks */,
+				DA5E1010304CBB63003D1D37 /* FirebaseCore in Frameworks */,
+				DABC6CE12E17458600A5CF83 /* UserNotificationsUI.framework in Frameworks */,
+				DA262AE62EA485150027CA69 /* CoreDisplay.framework in Frameworks */,
+				DA8FB0442E7CBE9000C9BD1A /* TelephonyUtilities.framework in Frameworks */,
+				DA8FB04A2E7CBE9500C9BD1A /* IDS.framework in Frameworks */,
+				DA8FB04D2E7CC1B100C9BD1A /* IMCore.framework in Frameworks */,
+				DA262AE02EA4841B0027CA69 /* OSD.framework in Frameworks */,
+				DA262AF52EA5D1B70027CA69 /* MultitouchSupport.framework in Frameworks */,
+				DABC6CDF2E17458500A5CF83 /* UserNotifications.framework in Frameworks */,
+				DAB2D08F2E78CE34002A9778 /* DisplayServices.framework in Frameworks */,
+				DA8FB0462E7CBE9300C9BD1A /* FTServices.framework in Frameworks */,
+				DA7C49AD2E15D3800049937A /* libNearbyShare.dylib in Frameworks */,
+				DABC6CDD2E17457A00A5CF83 /* IOKit.framework in Frameworks */,
+				DA8FB0532E7D898F00C9BD1A /* MobileTimerSupport.framework in Frameworks */,
+				DA5E1012304CBB63003D1D37 /* FirebaseCrashlytics in Frameworks */,
+				3EA625D8CDF343379815DBE6 /* FirebaseAppCheck in Frameworks */,
+				F4C6BD0940E54C6EBC832604 /* FirebaseFirestore in Frameworks */,
+				DA48B01B2E93DF9B0099BF74 /* SQLite in Frameworks */,
+				DA5E100A304CBB63003D1D37 /* FirebaseAnalytics in Frameworks */,
+				DA8FB0512E7D898F00C9BD1A /* MobileTimer.framework in Frameworks */,
+			);
+		};
+		DA46CF842DCBCA0100F00EC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		DA7C497E2E15CCA50049937A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				DACA66622E8B70E60056ED60 /* QRCode in Frameworks */,
+				DA7C49A52E15D34D0049937A /* SwiftECC in Frameworks */,
+				DA7C49A82E15D3660049937A /* SwiftProtobuf in Frameworks */,
+			);
+		};
+		DAA7D9D12E8633B20032748B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		F1CE000000000000000006AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		F2DE00000000000000000FBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A17D00000000000000000002 /* SapphireAndroidWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				A17D00000000000000000003 /* SapphireAndroidWidgets.swift */,
+				A17D00000000000000000006 /* AndroidWidgetSnapshotStore.swift */,
+				A17D00000000000000000004 /* Info.plist */,
+				A17D00000000000000000005 /* SapphireAndroidWidgets.entitlements */,
+			);
+			path = SapphireAndroidWidgets;
+			sourceTree = "<group>";
+		};
+		C0DE30000000000000000001 /* libimobiledevice */ = {
+			isa = PBXGroup;
+			children = (
+				C0DE30000000000000000002 /* bin */,
+				C0DE30000000000000000003 /* lib */,
+			);
+			path = libimobiledevice;
+			sourceTree = "<group>";
+		};
+		C0DE30000000000000000002 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				C0DE10000000000000000001 /* comptest */,
+				C0DE10000000000000000002 /* idevice_id */,
+				C0DE10000000000000000003 /* ideviceinfo */,
+				C0DE10000000000000000004 /* idevicesyslog */,
+				C0DE10000000000000000005 /* wificonnection */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		C0DE30000000000000000003 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				C0DE10000000000000000006 /* libcrypto.3.dylib */,
+				C0DE10000000000000000007 /* libimobiledevice-1.0.6.dylib */,
+				C0DE10000000000000000008 /* libimobiledevice-glue-1.0.0.dylib */,
+				C0DE10000000000000000009 /* libplist-2.0.4.dylib */,
+				C0DE1000000000000000000A /* libssl.3.dylib */,
+				C0DE1000000000000000000B /* libusbmuxd-2.0.6.dylib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		CAFE100000000000000002AA /* SapphireCameraExtension */ = {
+			isa = PBXGroup;
+			children = (
+				CAFE100000000000000003AA /* main.swift */,
+				CAFE100000000000000004AA /* SapphireCameraProvider.swift */,
+				CAFE10000000000000000AAA /* SapphireCameraIdentifiers.swift */,
+				CAFE100000000000000005AA /* Info.plist */,
+				CAFE100000000000000006AA /* SapphireCameraExtension.entitlements */,
+			);
+			path = SapphireCameraExtension;
+			sourceTree = "<group>";
+		};
+		CAFE200000000000000002BB /* SapphireAudioDriver */ = {
+			isa = PBXGroup;
+			children = (
+				CAFE200000000000000003BB /* SapphireAudioDriver.c */,
+				CAFE200000000000000004BB /* SapphireMicRing.h */,
+				CAFE200000000000000005BB /* Info.plist */,
+			);
+			path = SapphireAudioDriver;
+			sourceTree = "<group>";
+		};
+		DA262AE32EA484A70027CA69 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA46CF6D2DCBCA0000F00EC5 = {
+			isa = PBXGroup;
+			children = (
+				A17D00000000000000000002 /* SapphireAndroidWidgets */,
+				C0DE30000000000000000001 /* libimobiledevice */,
+				F1CE000000000000000007AA /* SapphireFinderSync */,
+				F2DE000000000000000009BB /* SapphireFileProvider */,
+				DA46CF7F2DCBCA0100F00EC5 /* SapphireTests */,
+				DA91BDE72E773A9D001E7836 /* SystemSounds */,
+				DAF7D8AD2E20801E00AB0820 /* SwiftProtobuf_SwiftProtobuf.bundle */,
+				DA183FC92E122AF30056667D /* Sapphire */,
+				DAA7D9D52E8633B20032748B /* abt */,
+				DA452EB02EAA57C90070E5C9 /* com.shariq.sapphireHelper */,
+				DA46CFCE2DCE7B9E00F00EC5 /* Frameworks */,
+				DA46CF772DCBCA0000F00EC5 /* Products */,
+				DA7C498E2E15D33A0049937A /* Nearby */,
+				DA7C49952E15D33A0049937A /* ProtobufGenerated */,
+				DA7C49972E15D33A0049937A /* Util */,
+				DA7C49B62E15D7360049937A /* ObjC */,
+				DA8FB0272E7CB76B00C9BD1A /* PrivateHeaders */,
+				DA789CFA2FAFC26000EB906E /* Volume */,
+				CAFE100000000000000002AA /* SapphireCameraExtension */,
+				CAFE200000000000000002BB /* SapphireAudioDriver */,
+				DA88288E304B06AB00E0ED48 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		DA46CF772DCBCA0000F00EC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A17D00000000000000000001 /* SapphireAndroidWidgets.appex */,
+				F1CE000000000000000001AA /* SapphireFinderSync.appex */,
+				F2DE000000000000000001BB /* SapphireFileProvider.appex */,
+				DA46CF762DCBCA0000F00EC5 /* Sapphire.app */,
+				DA46CF872DCBCA0100F00EC5 /* SapphireTests.xctest */,
+				DA7C49802E15CCA50049937A /* libNearbyShare.dylib */,
+				DAA7D9D42E8633B20032748B /* abt */,
+				DA452EAF2EAA57C90070E5C9 /* com.shariq.sapphireHelper */,
+				CAFE100000000000000001AA /* SapphireCameraExtension.systemextension */,
+				CAFE200000000000000001BB /* SapphireAudioDriver.driver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA46CFCE2DCE7B9E00F00EC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAB112562EAAEA32007AEA73 /* IOKit.framework */,
+				DAB112542EAAE7F3007AEA73 /* CoreServices.framework */,
+				DAB112522EAAE7EB007AEA73 /* CoreFoundation.framework */,
+				DA262AF42EA5D1B70027CA69 /* MultitouchSupport.framework */,
+				DA262AF32EA5D1A20027CA69 /* PrivateFrameworks */,
+				DA262AF02EA5D1940027CA69 /* MultitouchSessionFilterSupport.framework */,
+				DA262AE52EA485150027CA69 /* CoreDisplay.framework */,
+				DA262AE22EA484A70027CA69 /* Sapphire.xcodeproj */,
+				DA262ADF2EA4841B0027CA69 /* OSD.framework */,
+				DA69D6282E8442F5007FD12D /* dylib1.o */,
+				DA8FB04F2E7D898F00C9BD1A /* MobileTimer.framework */,
+				DA8FB0502E7D898F00C9BD1A /* MobileTimerSupport.framework */,
+				DA8FB04C2E7CC1B100C9BD1A /* IMCore.framework */,
+				DA8FAF032E7CB48100C9BD1A /* FTServices.framework */,
+				DA8FAF062E7CB48100C9BD1A /* IDS.framework */,
+				DA8FAF052E7CB48100C9BD1A /* IMSharedUtilities.framework */,
+				DA8FAF042E7CB48100C9BD1A /* TelephonyUtilities.framework */,
+				DA6BC4312E54F7D6007C2A51 /* WebKit.framework */,
+				DAF9CD382E54EA4600348E9F /* Network.framework */,
+				DA9385452E17B443006C5361 /* DisplayServices.framework */,
+				DA9385432E17B2A4006C5361 /* AppKit.framework */,
+				DABC6D012E177F6100A5CF83 /* ApplicationServices.framework */,
+				DABC6CDB2E17457700A5CF83 /* IOKit.framework */,
+				DABC6CD72E17455F00A5CF83 /* CoreGraphics.framework */,
+				DABC6CCF2E173F0600A5CF83 /* BezelServices.framework */,
+				DA7C49B92E15DB160049937A /* UserNotifications.framework */,
+				DA7C49B82E15DB160049937A /* UserNotificationsUI.framework */,
+				DACE9E002EADC9D000D01379 /* DriverKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA7C498E2E15D33A0049937A /* Nearby */ = {
+			isa = PBXGroup;
+			children = (
+				DABC6CBC2E16F53E00A5CF83 /* TransferDirection.swift */,
+				DA7C49892E15D33A0049937A /* InboundNearbyConnection.swift */,
+				DA52567A2E162FA900D8F42E /* ShareViewController.swift */,
+				DA52567C2E162FBE00D8F42E /* DeviceListCell.swift */,
+				DA7C498A2E15D33A0049937A /* NearbyConnection.swift */,
+				DA7C498B2E15D33A0049937A /* NearbyConnectionManager.swift */,
+				DA5256782E162B9F00D8F42E /* NearDropDisplayState.swift */,
+				DA7C498D2E15D33A0049937A /* OutboundNearbyConnection.swift */,
+			);
+			path = Nearby;
+			sourceTree = "<group>";
+		};
+		DA7C49952E15D33A0049937A /* ProtobufGenerated */ = {
+			isa = PBXGroup;
+			children = (
+				DACA665B2E8B5FCE0056ED60 /* sharing_enums.pb.swift */,
+				DACA665C2E8B5FCE0056ED60 /* SymmetricKey+Extensions.swift */,
+				DA7C498F2E15D33A0049937A /* device_to_device_messages.pb.swift */,
+				DA7C49902E15D33A0049937A /* offline_wire_formats.pb.swift */,
+				DA7C49912E15D33A0049937A /* securegcm.pb.swift */,
+				DA7C49922E15D33A0049937A /* securemessage.pb.swift */,
+				DA7C49932E15D33A0049937A /* ukey.pb.swift */,
+				DA7C49942E15D33A0049937A /* wire_format.pb.swift */,
+			);
+			path = ProtobufGenerated;
+			sourceTree = "<group>";
+		};
+		DA7C49972E15D33A0049937A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C49962E15D33A0049937A /* Data+Extensions.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		DA88288E304B06AB00E0ED48 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				CAFE200000000000000014BB /* CoreAudio.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		DA91BDE72E773A9D001E7836 /* SystemSounds */ = {
+			isa = PBXGroup;
+			children = (
+				DA91BDF12E773AC8001E7836 /* accessibility */,
+				DA91BDF42E773AC8001E7836 /* dock */,
+				DA91BDF82E773AC8001E7836 /* facetime */,
+				DA91BDFB2E773AC8001E7836 /* finder */,
+				DA91BE012E773AC8001E7836 /* ink */,
+				DA91BE062E773AC8001E7836 /* siri */,
+				DA91BE1F2E773AC8001E7836 /* system */,
+				DA91BE332E773AC8001E7836 /* telephony */,
+			);
+			path = SystemSounds;
+			sourceTree = "<group>";
+		};
+		DA91BDF12E773AC8001E7836 /* accessibility */ = {
+			isa = PBXGroup;
+			children = (
+				DA91BDE82E773AC8001E7836 /* Mouse Keys OFF.aif */,
+				DA91BDE92E773AC8001E7836 /* Mouse Keys ON.aif */,
+				DA91BDEA2E773AC8001E7836 /* Slow Keys, 1st Key Pressed.aif */,
+				DA91BDEB2E773AC8001E7836 /* Slow Keys, Key Registered.aif */,
+				DA91BDEC2E773AC8001E7836 /* Sticky Keys Locked.aif */,
+				DA91BDED2E773AC8001E7836 /* Sticky Keys MODIFER.aif */,
+				DA91BDEE2E773AC8001E7836 /* Sticky Keys OFF.aif */,
+				DA91BDEF2E773AC8001E7836 /* Sticky Keys ON.aif */,
+				DA91BDF02E773AC8001E7836 /* Sticky Keys Stuck.aif */,
+			);
+			path = accessibility;
+			sourceTree = "<group>";
+		};
+		DA91BDF42E773AC8001E7836 /* dock */ = {
+			isa = PBXGroup;
+			children = (
+				DA91BDF22E773AC8001E7836 /* drag to trash.aif */,
+				DA91BDF32E773AC8001E7836 /* poof item off dock.aif */,
+			);
+			path = dock;
+			sourceTree = "<group>";
+		};
+		DA91BDF82E773AC8001E7836 /* facetime */ = {
+			isa = PBXGroup;
+			children = (
+				DA91BDF52E773AC8001E7836 /* multiway_invitation.caf */,
+				DA91BDF62E773AC8001E7836 /* multiway_join.caf */,
+				DA91BDF72E773AC8001E7836 /* multiway_leave.caf */,
+			);
+			path = facetime;
+			sourceTree = "<group>";
+		};
+		DA91BDFB2E773AC8001E7836 /* finder */ = {
+			isa = PBXGroup;
+			children = (
+				DA91BDF92E773AC8001E7836 /* empty trash.aif */,
+				DA91BDFA2E773AC8001E7836 /* move to trash.aif */,
+			);
+			path = finder;
+			sourceTree = "<group>";
+		};
+		DA91BE012E773AC8001E7836 /* ink */ = {
+			isa = PBXGroup;
+			children = (
+				DA91BDFC2E773AC8001E7836 /* InkSoundBecomeMouse.aif */,
+				DA91BDFD2E773AC8001E7836 /* InkSoundStroke1.aif */,
+				DA91BDFE2E773AC8001E7836 /* InkSoundStroke2.aif */,
+				DA91BDFF2E773AC8001E7836 /* InkSoundStroke3.aif */,
+				DA91BE002E773AC8001E7836 /* InkSoundStroke4.aif */,
+			);
+			path = ink;
+			sourceTree = "<group>";
+		};
+		DA91BE062E773AC8001E7836 /* siri */ = {
+			isa = PBXGroup;
+			children = (
+				DA91BE022E773AC8001E7836 /* jbl_begin.caf */,
+				DA91BE032E773AC8001E7836 /* jbl_begin_short.caf */,
+				DA91BE042E773AC8001E7836 /* jbl_cancel.caf */,
+				DA91BE052E773AC8001E7836 /* jbl_confirm.caf */,
+			);
+			path = siri;
+			sourceTree = "<group>";
+		};
+		DA91BE1F2E773AC8001E7836 /* system */ = {
+			isa = PBXGroup;
+			children = (
+				DA91BE072E773AC8001E7836 /* acknowledgment_sent.caf */,
+				DA91BE082E773AC8001E7836 /* begin_record.caf */,
+				DA91BE092E773AC8001E7836 /* burn complete.aif */,
+				DA91BE0A2E773AC8001E7836 /* burn failed.aif */,
+				DA91BE0B2E773AC8001E7836 /* end_record.caf */,
+				DA91BE0C2E773AC8001E7836 /* Grab.aif */,
+				DA91BE0D2E773AC8001E7836 /* head_gestures_double_nod.caf */,
+				DA91BE0E2E773AC8001E7836 /* head_gestures_double_shake.caf */,
+				DA91BE0F2E773AC8001E7836 /* head_gestures_partial_nod.caf */,
+				DA91BE102E773AC8001E7836 /* head_gestures_partial_shake.caf */,
+				DA91BE112E773AC8001E7836 /* Media Keys.aif */,
+				DA91BE122E773AC8001E7836 /* media_handoff.caf */,
+				DA91BE132E773AC8001E7836 /* media_paused.caf */,
+				DA91BE142E773AC8001E7836 /* mic_mute.caf */,
+				DA91BE152E773AC8001E7836 /* mic_unmute.caf */,
+				DA91BE162E773AC8001E7836 /* mic_unmute_fail.caf */,
+				DA91BE172E773AC8001E7836 /* payment_failure.aif */,
+				DA91BE182E773AC8001E7836 /* payment_success.aif */,
+				DA91BE192E773AC8001E7836 /* Screen Capture.aif */,
+				DA91BE1A2E773AC8001E7836 /* screen_sharing_started.caf */,
+				DA91BE1B2E773AC8001E7836 /* SentMessage.caf */,
+				DA91BE1C2E773AC8001E7836 /* Shutter.aif */,
+				DA91BE1D2E773AC8001E7836 /* Volume Mount.aif */,
+				DA91BE1E2E773AC8001E7836 /* Volume Unmount.aif */,
+			);
+			path = system;
+			sourceTree = "<group>";
+		};
+		DA91BE332E773AC8001E7836 /* telephony */ = {
+			isa = PBXGroup;
+			children = (
+				DA91BE202E773AC8001E7836 /* busy_tone_ansi.caf */,
+				DA91BE212E773AC8001E7836 /* busy_tone_cept.caf */,
+				DA91BE222E773AC8001E7836 /* call_waiting_tone_ansi.caf */,
+				DA91BE232E773AC8001E7836 /* call_waiting_tone_cept.caf */,
+				DA91BE242E773AC8001E7836 /* dtmf-0.caf */,
+				DA91BE252E773AC8001E7836 /* dtmf-1.caf */,
+				DA91BE262E773AC8001E7836 /* dtmf-2.caf */,
+				DA91BE272E773AC8001E7836 /* dtmf-3.caf */,
+				DA91BE282E773AC8001E7836 /* dtmf-4.caf */,
+				DA91BE292E773AC8001E7836 /* dtmf-5.caf */,
+				DA91BE2A2E773AC8001E7836 /* dtmf-6.caf */,
+				DA91BE2B2E773AC8001E7836 /* dtmf-7.caf */,
+				DA91BE2C2E773AC8001E7836 /* dtmf-8.caf */,
+				DA91BE2D2E773AC8001E7836 /* dtmf-9.caf */,
+				DA91BE2E2E773AC8001E7836 /* dtmf-pound.caf */,
+				DA91BE2F2E773AC8001E7836 /* dtmf-star.caf */,
+				DA91BE302E773AC8001E7836 /* end_call_tone_cept.caf */,
+				DA91BE312E773AC8001E7836 /* ringback_tone_ansi.caf */,
+				DA91BE322E773AC8001E7836 /* ringback_tone_cept.caf */,
+			);
+			path = telephony;
+			sourceTree = "<group>";
+		};
+		F1CE000000000000000007AA /* SapphireFinderSync */ = {
+			isa = PBXGroup;
+			children = (
+				F1CE000000000000000002AA /* main.swift */,
+				F1CE000000000000000004AA /* Info.plist */,
+				F1CE000000000000000005AA /* SapphireFinderSync.entitlements */,
+			);
+			path = SapphireFinderSync;
+			sourceTree = "<group>";
+		};
+		F2DE000000000000000009BB /* SapphireFileProvider */ = {
+			isa = PBXGroup;
+			children = (
+				F2DE000000000000000002BB /* FileProviderExtension.swift */,
+				F2DE000000000000000003BB /* FileProviderItem.swift */,
+				F2DE000000000000000004BB /* FileProviderEnumerator.swift */,
+				F2DE000000000000000005BB /* HostConnection.swift */,
+				F2DE000000000000000006BB /* ContinuityFileProviderShared.swift */,
+				F2DE000000000000000019BB /* PhoneDrive.icns */,
+				F2DE000000000000000007BB /* Info.plist */,
+				F2DE000000000000000008BB /* SapphireFileProvider.entitlements */,
+			);
+			path = SapphireFileProvider;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DA7C497C2E15CCA50049937A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			files = (
+			);
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A17D0000000000000000000E /* SapphireAndroidWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A17D00000000000000000013 /* Build configuration list for PBXNativeTarget "SapphireAndroidWidgets" */;
+			buildPhases = (
+				A17D0000000000000000000B /* Sources */,
+				A17D0000000000000000000A /* Frameworks */,
+				A17D0000000000000000000C /* Resources */,
+			);
+			buildRules = (
+			);
+			name = SapphireAndroidWidgets;
+			productName = SapphireAndroidWidgets;
+			productReference = A17D00000000000000000001 /* SapphireAndroidWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CAFE10000000000000000EAA /* SapphireCameraExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAFE100000000000000011AA /* Build configuration list for PBXNativeTarget "SapphireCameraExtension" */;
+			buildPhases = (
+				CAFE10000000000000000BAA /* Sources */,
+				CAFE10000000000000000CAA /* Frameworks */,
+				CAFE10000000000000000DAA /* Resources */,
+			);
+			buildRules = (
+			);
+			name = SapphireCameraExtension;
+			productName = SapphireCameraExtension;
+			productReference = CAFE100000000000000001AA /* SapphireCameraExtension.systemextension */;
+			productType = "com.apple.product-type.system-extension";
+		};
+		CAFE20000000000000000BBB /* SapphireAudioDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAFE20000000000000000EBB /* Build configuration list for PBXNativeTarget "SapphireAudioDriver" */;
+			buildPhases = (
+				CAFE200000000000000007BB /* Sources */,
+				CAFE200000000000000008BB /* Frameworks */,
+				CAFE200000000000000009BB /* Resources */,
+			);
+			buildRules = (
+			);
+			name = SapphireAudioDriver;
+			productName = SapphireAudioDriver;
+			productReference = CAFE200000000000000001BB /* SapphireAudioDriver.driver */;
+			productType = "com.apple.product-type.bundle";
+		};
+		DA452EAE2EAA57C90070E5C9 /* com.shariq.sapphireHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA452EB32EAA57C90070E5C9 /* Build configuration list for PBXNativeTarget "com.shariq.sapphireHelper" */;
+			buildPhases = (
+				DA452EAB2EAA57C90070E5C9 /* Sources */,
+				DA452EAC2EAA57C90070E5C9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				DA452EB02EAA57C90070E5C9 /* com.shariq.sapphireHelper */,
+			);
+			name = com.shariq.sapphireHelper;
+			productName = SapphireHelper;
+			productReference = DA452EAF2EAA57C90070E5C9 /* com.shariq.sapphireHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+		DA46CF752DCBCA0000F00EC5 /* Sapphire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA46CF9B2DCBCA0100F00EC5 /* Build configuration list for PBXNativeTarget "Sapphire" */;
+			buildPhases = (
+				DA46CF722DCBCA0000F00EC5 /* Sources */,
+				DA46CF732DCBCA0000F00EC5 /* Frameworks */,
+				DA46CF742DCBCA0000F00EC5 /* Resources */,
+				C0DE40000000000000000001 /* Embed iDevice Tools */,
+				C0DE40000000000000000002 /* Embed iDevice Libraries */,
+				DAE70B782E12300B001F0890 /* Embed Frameworks */,
+				DAF7D8AC2E207C5100AB0820 /* CopyFiles */,
+				DABFA98B2EBFBA35000C5A8B /* Embed Helper LaunchDaemon Plist */,
+				DA262B242EA942750027CA69 /* Embed Helper Executable */,
+				CAFE100000000000000012AA /* Embed System Extensions */,
+				CAFE20000000000000000FBB /* Embed Audio Driver */,
+				F1CE00000000000000003AA /* Embed Finder Extensions */,
+				A17D0000000000000000000D /* Embed Widget Extensions */,
+				DA452EBA2EAA5A010070E5C9 /* Resign Sapphire Helper */,
+				DAC019182E9EA03E00CA587F /* Upload Crashlytics Symbols */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A17D00000000000000000010 /* PBXTargetDependency */,
+				CAFE100000000000000014AA /* PBXTargetDependency */,
+				CAFE200000000000000011BB /* PBXTargetDependency */,
+				DA452EB92EAA58100070E5C9 /* PBXTargetDependency */,
+				DA7C49B02E15D3800049937A /* PBXTargetDependency */,
+				F1CE00000000000000000CAA /* PBXTargetDependency */,
+				F2DE000000000000000011BB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DA183FC92E122AF30056667D /* Sapphire */,
+				DA7C49B62E15D7360049937A /* ObjC */,
+				DA8FB0272E7CB76B00C9BD1A /* PrivateHeaders */,
+			);
+			name = Sapphire;
+			packageProductDependencies = (
+				F3A600000000000000000002 /* Yams */,
+				DA48B01A2E93DF9B0099BF74 /* SQLite */,
+				DA5E1009304CBB63003D1D37 /* FirebaseAnalytics */,
+				DA5E100F304CBB63003D1D37 /* FirebaseCore */,
+				DA5E1011304CBB63003D1D37 /* FirebaseCrashlytics */,
+				350EC0B0ACC04131989F6CB6 /* FirebaseAppCheck */,
+				FD831867A2F947938E17E286 /* FirebaseFirestore */,
+			);
+			productName = DynamicNotch;
+			productReference = DA46CF762DCBCA0000F00EC5 /* Sapphire.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA46CF862DCBCA0100F00EC5 /* SapphireTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA46CF8A2DCBCA0100F00EC5 /* Build configuration list for PBXNativeTarget "SapphireTests" */;
+			buildPhases = (
+				DA46CF832DCBCA0100F00EC5 /* Sources */,
+				DA46CF842DCBCA0100F00EC5 /* Frameworks */,
+				DA46CF852DCBCA0100F00EC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA46CF812DCBCA0100F00EC5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DA46CF7F2DCBCA0100F00EC5 /* SapphireTests */,
+			);
+			name = SapphireTests;
+			productName = SapphireTests;
+			productReference = DA46CF872DCBCA0100F00EC5 /* SapphireTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA7C497F2E15CCA50049937A /* NearbyShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7C49862E15CCA50049937A /* Build configuration list for PBXNativeTarget "NearbyShare" */;
+			buildPhases = (
+				DA7C497C2E15CCA50049937A /* Headers */,
+				DA7C497D2E15CCA50049937A /* Sources */,
+				DA7C497E2E15CCA50049937A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			name = NearbyShare;
+			packageProductDependencies = (
+				DA7C49A42E15D34D0049937A /* SwiftECC */,
+				DA7C49A72E15D3660049937A /* SwiftProtobuf */,
+				DACA66612E8B70E60056ED60 /* QRCode */,
+			);
+			productName = NearbyShare;
+			productReference = DA7C49802E15CCA50049937A /* libNearbyShare.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		DAA7D9D32E8633B20032748B /* abt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA7D9D82E8633B20032748B /* Build configuration list for PBXNativeTarget "abt" */;
+			buildPhases = (
+				DAA7D9D02E8633B20032748B /* Sources */,
+				DAA7D9D12E8633B20032748B /* Frameworks */,
+				DAA7D9D22E8633B20032748B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				DAA7D9D52E8633B20032748B /* abt */,
+			);
+			name = abt;
+			productName = abt;
+			productReference = DAA7D9D42E8633B20032748B /* abt */;
+			productType = "com.apple.product-type.tool";
+		};
+		F1CE000000000000000008AA /* SapphireFinderSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1CE000000000000000009AA /* Build configuration list for PBXNativeTarget "SapphireFinderSync" */;
+			buildPhases = (
+				F1CE00000000000000000AAA /* Sources */,
+				F1CE000000000000000006AA /* Frameworks */,
+				F1CE00000000000000000BAA /* Resources */,
+			);
+			buildRules = (
+			);
+			name = SapphireFinderSync;
+			productName = SapphireFinderSync;
+			productReference = F1CE000000000000000001AA /* SapphireFinderSync.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F2DE00000000000000000ABB /* SapphireFileProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2DE00000000000000000BBB /* Build configuration list for PBXNativeTarget "SapphireFileProvider" */;
+			buildPhases = (
+				F2DE00000000000000000EBB /* Sources */,
+				F2DE00000000000000000FBB /* Frameworks */,
+				F2DE000000000000000010BB /* Resources */,
+			);
+			buildRules = (
+			);
+			name = SapphireFileProvider;
+			productName = SapphireFileProvider;
+			productReference = F2DE000000000000000001BB /* SapphireFileProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA46CF6E2DCBCA0000F00EC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					A17D0000000000000000000E = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					DA452EAE2EAA57C90070E5C9 = {
+						CreatedOnToolsVersion = 26.0.1;
+						LastSwiftMigration = 2600;
+					};
+					DA46CF752DCBCA0000F00EC5 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					DA46CF862DCBCA0100F00EC5 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					DA7C497F2E15CCA50049937A = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					DAA7D9D32E8633B20032748B = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+				};
+			};
+			buildConfigurationList = DA46CF712DCBCA0000F00EC5 /* Build configuration list for PBXProject "Sapphire" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA46CF6D2DCBCA0000F00EC5;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F3A600000000000000000001 /* XCRemoteSwiftPackageReference "Yams" */,
+				DAD47CD22E13C3DB001B70C8 /* XCRemoteSwiftPackageReference "SwiftECC" */,
+				DA7C49A62E15D3660049937A /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+				DA8FAEFC2E7CA8B900C9BD1A /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */,
+				DAA7D8E02E8488800032748B /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				DACA66602E8B70E60056ED60 /* XCRemoteSwiftPackageReference "qrcode" */,
+				DA48B0192E93DF9B0099BF74 /* XCRemoteSwiftPackageReference "SQLite" */,
+				DA5E1008304CBB63003D1D37 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 100;
+			productRefGroup = DA46CF772DCBCA0000F00EC5 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DA262AE32EA484A70027CA69 /* Products */;
+					ProjectRef = DA262AE22EA484A70027CA69 /* Sapphire.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A17D0000000000000000000E /* SapphireAndroidWidgets */,
+				DA46CF752DCBCA0000F00EC5 /* Sapphire */,
+				DA46CF862DCBCA0100F00EC5 /* SapphireTests */,
+				DA7C497F2E15CCA50049937A /* NearbyShare */,
+				DAA7D9D32E8633B20032748B /* abt */,
+				DA452EAE2EAA57C90070E5C9 /* com.shariq.sapphireHelper */,
+				CAFE10000000000000000EAA /* SapphireCameraExtension */,
+				CAFE20000000000000000BBB /* SapphireAudioDriver */,
+				F1CE000000000000000008AA /* SapphireFinderSync */,
+				F2DE00000000000000000ABB /* SapphireFileProvider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A17D0000000000000000000C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		CAFE10000000000000000DAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		CAFE200000000000000009BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		DA46CF742DCBCA0000F00EC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				DAA7D9142E848D340032748B /* busy_tone_cept.caf in Resources */,
+				DA91BE342E773AC8001E7836 /* begin_record.caf in Resources */,
+				DA91BE352E773AC8001E7836 /* jbl_begin_short.caf in Resources */,
+				DA91BE362E773AC8001E7836 /* multiway_leave.caf in Resources */,
+				DA91BE372E773AC8001E7836 /* empty trash.aif in Resources */,
+				DA91BE382E773AC8001E7836 /* burn failed.aif in Resources */,
+				DA91BE392E773AC8001E7836 /* head_gestures_partial_shake.caf in Resources */,
+				DA91BE3A2E773AC8001E7836 /* media_paused.caf in Resources */,
+				DA91BE3B2E773AC8001E7836 /* InkSoundStroke2.aif in Resources */,
+				DA91BE3C2E773AC8001E7836 /* jbl_cancel.caf in Resources */,
+				DA91BE3D2E773AC8001E7836 /* Sticky Keys OFF.aif in Resources */,
+				DA91BE3E2E773AC8001E7836 /* Volume Mount.aif in Resources */,
+				DA91BE3F2E773AC8001E7836 /* poof item off dock.aif in Resources */,
+				DA91BE402E773AC8001E7836 /* dtmf-0.caf in Resources */,
+				DA91BE412E773AC8001E7836 /* dtmf-5.caf in Resources */,
+				DA91BE422E773AC8001E7836 /* Sticky Keys Stuck.aif in Resources */,
+				DA91BE432E773AC8001E7836 /* burn complete.aif in Resources */,
+				DA91BE442E773AC8001E7836 /* payment_failure.aif in Resources */,
+				DA91BE452E773AC8001E7836 /* SentMessage.caf in Resources */,
+				DA91BE462E773AC8001E7836 /* multiway_invitation.caf in Resources */,
+				DA91BE472E773AC8001E7836 /* move to trash.aif in Resources */,
+				DA91BE482E773AC8001E7836 /* ringback_tone_ansi.caf in Resources */,
+				DA91BE492E773AC8001E7836 /* dtmf-4.caf in Resources */,
+				DA91BE4A2E773AC8001E7836 /* Sticky Keys Locked.aif in Resources */,
+				DA91BE4B2E773AC8001E7836 /* InkSoundStroke3.aif in Resources */,
+				DA91BE4C2E773AC8001E7836 /* InkSoundStroke1.aif in Resources */,
+				DA91BE4D2E773AC8001E7836 /* acknowledgment_sent.caf in Resources */,
+				DA91BE4E2E773AC8001E7836 /* Shutter.aif in Resources */,
+				DA91BE4F2E773AC8001E7836 /* Volume Unmount.aif in Resources */,
+				DA91BE502E773AC8001E7836 /* dtmf-7.caf in Resources */,
+				DA91BE512E773AC8001E7836 /* call_waiting_tone_ansi.caf in Resources */,
+				DA91BE522E773AC8001E7836 /* Sticky Keys MODIFER.aif in Resources */,
+				DA91BE532E773AC8001E7836 /* jbl_begin.caf in Resources */,
+				DA91BE542E773AC8001E7836 /* Slow Keys, Key Registered.aif in Resources */,
+				DA91BE552E773AC8001E7836 /* dtmf-9.caf in Resources */,
+				DA91BE562E773AC8001E7836 /* mic_unmute.caf in Resources */,
+				DA91BE572E773AC8001E7836 /* ringback_tone_cept.caf in Resources */,
+				DA91BE582E773AC8001E7836 /* InkSoundStroke4.aif in Resources */,
+				DA91BE592E773AC8001E7836 /* Mouse Keys OFF.aif in Resources */,
+				DA91BE5A2E773AC8001E7836 /* dtmf-1.caf in Resources */,
+				DA91BE5B2E773AC8001E7836 /* Slow Keys, 1st Key Pressed.aif in Resources */,
+				DA91BE5C2E773AC8001E7836 /* mic_unmute_fail.caf in Resources */,
+				DA91BE5D2E773AC8001E7836 /* end_call_tone_cept.caf in Resources */,
+				DA91BE5F2E773AC8001E7836 /* mic_mute.caf in Resources */,
+				DA91BE602E773AC8001E7836 /* dtmf-3.caf in Resources */,
+				DA91BE612E773AC8001E7836 /* Sticky Keys ON.aif in Resources */,
+				DA91BE622E773AC8001E7836 /* InkSoundBecomeMouse.aif in Resources */,
+				DA91BE632E773AC8001E7836 /* Mouse Keys ON.aif in Resources */,
+				DA91BE642E773AC8001E7836 /* end_record.caf in Resources */,
+				DA91BE652E773AC8001E7836 /* Screen Capture.aif in Resources */,
+				DA91BE662E773AC8001E7836 /* multiway_join.caf in Resources */,
+				DA91BE672E773AC8001E7836 /* dtmf-2.caf in Resources */,
+				DA91BE682E773AC8001E7836 /* busy_tone_ansi.caf in Resources */,
+				DA91BE692E773AC8001E7836 /* dtmf-star.caf in Resources */,
+				DA91BE6A2E773AC8001E7836 /* dtmf-pound.caf in Resources */,
+				DA91BE6B2E773AC8001E7836 /* head_gestures_partial_nod.caf in Resources */,
+				DA91BE6C2E773AC8001E7836 /* payment_success.aif in Resources */,
+				DA91BE6D2E773AC8001E7836 /* media_handoff.caf in Resources */,
+				DA91BE6E2E773AC8001E7836 /* call_waiting_tone_cept.caf in Resources */,
+				DA91BE6F2E773AC8001E7836 /* Grab.aif in Resources */,
+				DA91BE702E773AC8001E7836 /* dtmf-6.caf in Resources */,
+				DA91BE712E773AC8001E7836 /* jbl_confirm.caf in Resources */,
+				DA91BE722E773AC8001E7836 /* screen_sharing_started.caf in Resources */,
+				DA91BE732E773AC8001E7836 /* dtmf-8.caf in Resources */,
+				DA91BE742E773AC8001E7836 /* head_gestures_double_nod.caf in Resources */,
+				DA91BE752E773AC8001E7836 /* head_gestures_double_shake.caf in Resources */,
+				DA91BE762E773AC8001E7836 /* Media Keys.aif in Resources */,
+				DA91BE772E773AC8001E7836 /* drag to trash.aif in Resources */,
+			);
+		};
+		DA46CF852DCBCA0100F00EC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		F1CE00000000000000000BAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		F2DE000000000000000010BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DA452EBA2EAA5A010070E5C9 /* Resign Sapphire Helper */ = {
+			isa = PBXShellScriptBuildPhase;
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_FOLDER_PATH)/com.shariq.sapphireHelper",
+				"$(SRCROOT)/com.shariq.sapphireHelper/sapphireHelper.entitlements",
+			);
+			name = "Resign Sapphire Helper";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/sapphire-helper-resigned-$(CODE_SIGNING_ALLOWED)-$(EXPANDED_CODE_SIGN_IDENTITY).stamp",
+			);
+			shellPath = /bin/sh;
+			shellScript = (
+				"HELPER=\"${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/com.shariq.sapphireHelper\"",
+				"ENTITLEMENTS=\"${SRCROOT}/com.shariq.sapphireHelper/sapphireHelper.entitlements\"",
+				"STAMP=\"${SCRIPT_OUTPUT_FILE_0}\"",
+				"",
+				"if [ ! -f \"$HELPER\" ]; then",
+				"  echo \"error: Sapphire helper missing at $HELPER\"",
+				"  exit 1",
+				"fi",
+				"",
+				"if [ -z \"${EXPANDED_CODE_SIGN_IDENTITY:-}\" ] || [ \"${EXPANDED_CODE_SIGN_IDENTITY}\" = \"-\" ]; then",
+				"  echo \"warning: No code signing identity; leaving helper signature as-is\"",
+				"  codesign -d --entitlements - \"$HELPER\" || true",
+				"  touch \"$STAMP\"",
+				"  exit 0",
+				"fi",
+				"",
+				"# SMAppService daemons cannot carry restricted entitlements (application-identifier,",
+				"# get-task-allow, etc.) without a matching profile. Sign as a plain hardened tool.",
+				"# Use a secure timestamp so Gatekeeper / Login Items do not label the helper as an",
+				"# \"unidentified developer\" item (regression from --timestamp=none in 2.55).",
+				"echo \"Re-signing Sapphire helper with empty entitlements (identity: ${EXPANDED_CODE_SIGN_IDENTITY})\"",
+				"codesign --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" \\",
+				"  --identifier com.shariq.sapphireHelper \\",
+				"  --entitlements \"$ENTITLEMENTS\" \\",
+				"  --generate-entitlement-der \\",
+				"  --options runtime \\",
+				"  --timestamp \\",
+				"  \"$HELPER\"",
+				"",
+				"RESIGN_RC=$?",
+				"",
+				"echo \"Helper entitlements after resign:\"",
+				"codesign -d --entitlements :- \"$HELPER\" 2>&1 | sed 's/^/  /'",
+				"echo \"Helper signature:\"",
+				"codesign -dv --verbose=2 \"$HELPER\" 2>&1 | sed 's/^/  /'",
+				"",
+				"if [ \"$RESIGN_RC\" -ne 0 ]; then",
+				"  echo \"error: Failed to re-sign helper (exit $RESIGN_RC)\"",
+				"  exit 1",
+				"fi",
+				"touch \"$STAMP\"",
+				"",
+			);
+		};
+		DAC019182E9EA03E00CA587F /* Upload Crashlytics Symbols */ = {
+			isa = PBXShellScriptBuildPhase;
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = "Upload Crashlytics Symbols";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/firebase-crashlytics-uploaded.stamp",
+			);
+			shellPath = /bin/sh;
+			shellScript = (
+				"set -e",
+				"\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"",
+				"touch \"${SCRIPT_OUTPUT_FILE_0}\"",
+				"",
+			);
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A17D0000000000000000000B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				A17D00000000000000000007 /* SapphireAndroidWidgets.swift in Sources */,
+				A17D00000000000000000008 /* AndroidWidgetSnapshotStore.swift in Sources */,
+			);
+		};
+		CAFE10000000000000000BAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				CAFE100000000000000007AA /* main.swift in Sources */,
+			);
+		};
+		CAFE200000000000000007BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				CAFE200000000000000006BB /* SapphireAudioDriver.c in Sources */,
+			);
+		};
+		DA452EAB2EAA57C90070E5C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		DA46CF722DCBCA0000F00EC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		DA46CF832DCBCA0100F00EC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		DA7C497D2E15CCA50049937A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				DA7C49992E15D33A0049937A /* wire_format.pb.swift in Sources */,
+				DACA665D2E8B5FCE0056ED60 /* sharing_enums.pb.swift in Sources */,
+				DACA665E2E8B5FCE0056ED60 /* SymmetricKey+Extensions.swift in Sources */,
+				DA7C499A2E15D33A0049937A /* securemessage.pb.swift in Sources */,
+				DA8A79B02E5AAE260009F091 /* TransferDirection.swift in Sources */,
+				DA8A79B12E5AAE260009F091 /* OutboundNearbyConnection.swift in Sources */,
+				DA8A79B22E5AAE260009F091 /* NearDropDisplayState.swift in Sources */,
+				DA8A79B32E5AAE260009F091 /* NearbyConnection.swift in Sources */,
+				DA8A79B42E5AAE260009F091 /* NearbyConnectionManager.swift in Sources */,
+				DA8A79B52E5AAE260009F091 /* DeviceListCell.swift in Sources */,
+				DA8A79B62E5AAE260009F091 /* InboundNearbyConnection.swift in Sources */,
+				DA7C499D2E15D33A0049937A /* Data+Extensions.swift in Sources */,
+				DA7C499E2E15D33A0049937A /* device_to_device_messages.pb.swift in Sources */,
+				DA7C499F2E15D33A0049937A /* ukey.pb.swift in Sources */,
+				DA6344C82E5AA816007EAB5F /* ShareViewController.swift in Sources */,
+				DA7C49A22E15D33A0049937A /* offline_wire_formats.pb.swift in Sources */,
+				DA7C49A32E15D33A0049937A /* securegcm.pb.swift in Sources */,
+			);
+		};
+		DAA7D9D02E8633B20032748B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		F1CE00000000000000000AAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				F1CE00000000000000001AA /* main.swift in Sources */,
+			);
+		};
+		F2DE00000000000000000EBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				F2DE000000000000000013BB /* FileProviderExtension.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A17D00000000000000000010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A17D0000000000000000000E /* SapphireAndroidWidgets */;
+			targetProxy = A17D0000000000000000000F /* PBXContainerItemProxy */;
+		};
+		CAFE100000000000000014AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAFE10000000000000000EAA /* SapphireCameraExtension */;
+			targetProxy = CAFE100000000000000015AA /* PBXContainerItemProxy */;
+		};
+		CAFE200000000000000011BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAFE20000000000000000BBB /* SapphireAudioDriver */;
+			targetProxy = CAFE200000000000000012BB /* PBXContainerItemProxy */;
+		};
+		DA452EB92EAA58100070E5C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA452EAE2EAA57C90070E5C9 /* com.shariq.sapphireHelper */;
+			targetProxy = DA452EB82EAA58100070E5C9 /* PBXContainerItemProxy */;
+		};
+		DA46CF812DCBCA0100F00EC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA46CF752DCBCA0000F00EC5 /* Sapphire */;
+			targetProxy = DA46CF802DCBCA0100F00EC5 /* PBXContainerItemProxy */;
+		};
+		DA7C49B02E15D3800049937A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA7C497F2E15CCA50049937A /* NearbyShare */;
+			targetProxy = DA7C49AF2E15D3800049937A /* PBXContainerItemProxy */;
+		};
+		F1CE00000000000000000CAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1CE000000000000000008AA /* SapphireFinderSync */;
+			targetProxy = F1CE00000000000000000DAA /* PBXContainerItemProxy */;
+		};
+		F2DE000000000000000011BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2DE00000000000000000ABB /* SapphireFileProvider */;
+			targetProxy = F2DE000000000000000012BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A17D00000000000000000011 /* Debug configuration for PBXNativeTarget "SapphireAndroidWidgets" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = SapphireAndroidWidgets/SapphireAndroidWidgets.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KVQFWJ7C7S;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SapphireAndroidWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cshariq.sapphire.AndroidWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A17D00000000000000000012 /* Release configuration for PBXNativeTarget "SapphireAndroidWidgets" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = SapphireAndroidWidgets/SapphireAndroidWidgets.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KVQFWJ7C7S;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SapphireAndroidWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cshariq.sapphire.AndroidWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CAFE10000000000000000FAA /* Debug configuration for PBXNativeTarget "SapphireCameraExtension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KVQFWJ7C7S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PublicExtensionStubs/Camera/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shariq.sapphire.CameraExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CAFE100000000000000010AA /* Release configuration for PBXNativeTarget "SapphireCameraExtension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KVQFWJ7C7S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PublicExtensionStubs/Camera/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shariq.sapphire.CameraExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CAFE20000000000000000CBB /* Debug configuration for PBXNativeTarget "SapphireAudioDriver" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KVQFWJ7C7S;
+				ENABLE_HARDENED_RUNTIME = NO;
+				EXECUTABLE_EXTENSION = driver;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PublicExtensionStubs/AudioDriver/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shariq.sapphire.ContinuityMicDriver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = driver;
+			};
+			name = Debug;
+		};
+		CAFE20000000000000000DBB /* Release configuration for PBXNativeTarget "SapphireAudioDriver" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KVQFWJ7C7S;
+				ENABLE_HARDENED_RUNTIME = NO;
+				EXECUTABLE_EXTENSION = driver;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PublicExtensionStubs/AudioDriver/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shariq.sapphire.ContinuityMicDriver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = driver;
+			};
+			name = Release;
+		};
+		DA452EB42EAA57C90070E5C9 /* Debug configuration for PBXNativeTarget "com.shariq.sapphireHelper" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AUTOMATION_APPLE_EVENTS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = KVQFWJ7C7S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "$(SRCROOT)/$(TARGET_NAME)/Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				OTHER_CODE_SIGN_FLAGS = "--identifier com.shariq.sapphireHelper --generate-entitlement-der --timestamp";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shariq.sapphireHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "com.shariq.sapphireHelper/SapphireHelper-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DA452EB52EAA57C90070E5C9 /* Release configuration for PBXNativeTarget "com.shariq.sapphireHelper" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AUTOMATION_APPLE_EVENTS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = KVQFWJ7C7S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "$(SRCROOT)/$(TARGET_NAME)/Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				OTHER_CODE_SIGN_FLAGS = "--identifier com.shariq.sapphireHelper --generate-entitlement-der --timestamp";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shariq.sapphireHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "com.shariq.sapphireHelper/SapphireHelper-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DA46CF882DCBCA0100F00EC5 /* Debug configuration for PBXNativeTarget "SapphireTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KVQFWJ7C7S;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shariq.SapphireTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sapphire.app/Contents/MacOS/Sapphire";
+			};
+			name = Debug;
+		};
+		DA46CF892DCBCA0100F00EC5 /* Release configuration for PBXNativeTarget "SapphireTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KVQFWJ7C7S;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shariq.SapphireTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sapphire.app/Contents/MacOS/Sapphire";
+			};
+			name = Release;
+		};
+		DA46CF992DCBCA0100F00EC5 /* Debug configuration for PBXProject "Sapphire" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KVQFWJ7C7S;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DSAPPHIRE_IS_BETA_BUILD";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DA46CF9A2DCBCA0100F00EC5 /* Release configuration for PBXProject "Sapphire" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KVQFWJ7C7S;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "-DSAPPHIRE_IS_BETA_BUILD";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DA46CF9C2DCBCA0100F00EC5 /* Debug configuration for PBXNativeTarget "Sapphire" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				AUTOMATION_APPLE_EVENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = Sapphire/Sapphire.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KVQFWJ7C7S;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_DEBUG_DYLIB = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = YES;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = YES;
+				ENABLE_RESOURCE_ACCESS_LOCATION = YES;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Sapphire/Services/Music";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/PrivateHeaders";
+				INFOPLIST_FILE = Sapphire/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Notchy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Notchy needs access to control playback and read track information from Music and Spotify.";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Used to show upcming songs and playlists within apple music";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Notchy needs bluetooth to show new connections and battery low notifications";
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Notchy needs calendar permission to show upcoming events";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Blip can learn from your calendar patterns to better understand your schedule and preferences.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Notchy uses the camera for the Mirror widget so you can see yourself in the notch.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Notchy needs access to your contacts to find the correct phone number or email when sending a reply from a notification.";
+				INFOPLIST_KEY_NSFocusStatusUsageDescription = "Needed to provide live focus updates";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2025 Shariq Charolia. All rights reserved.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Notchy needs this to provide nearby share functionality";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Needed to provide live weather updates";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Notchy needs this to weather";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Blip uses your location for local weather, nearby places, and location-aware tasks.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Notchy uses the microphone for Gemini Live voice conversations.";
+				INFOPLIST_KEY_NSNetworkVolumesUsageDescription = "Notchy needs this to provide nearby share functionality";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSRemindersFullAccessUsageDescription = "Notchy needs this to show upcoming reminders";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Needed to show reminders";
+				INFOPLIST_KEY_NSSystemExtensionUsageDescription = "Notchy needs this extension to create a virtual multi-output audio device.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sapphire/Services/Music",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 3.0;
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_SWIFT_FLAGS = "";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cshariq.sapphire;
+				PRODUCT_NAME = Notchy;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				REGISTER_APP_GROUPS = YES;
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjC/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(SDKROOT)/System/Library/PrivateFrameworks";
+			};
+			name = Debug;
+		};
+		DA46CF9D2DCBCA0100F00EC5 /* Release configuration for PBXNativeTarget "Sapphire" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				AUTOMATION_APPLE_EVENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = Sapphire/Sapphire.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = KVQFWJ7C7S;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_DEBUG_DYLIB = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = YES;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = YES;
+				ENABLE_RESOURCE_ACCESS_LOCATION = YES;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Sapphire/Services/Music";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/PrivateHeaders";
+				INFOPLIST_FILE = Sapphire/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Notchy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Notchy needs access to control playback and read track information from Music and Spotify.";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Used to show upcming songs and playlists within apple music";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Notchy needs bluetooth to show new connections and battery low notifications";
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Notchy needs calendar permission to show upcoming events";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Blip can learn from your calendar patterns to better understand your schedule and preferences.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Notchy uses the camera for the Mirror widget so you can see yourself in the notch.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Notchy needs access to your contacts to find the correct phone number or email when sending a reply from a notification.";
+				INFOPLIST_KEY_NSFocusStatusUsageDescription = "Needed to provide live focus updates";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2025 Shariq Charolia. All rights reserved.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Notchy needs this to provide nearby share functionality";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Needed to provide live weather updates";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Notchy needs this to weather";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Blip uses your location for local weather, nearby places, and location-aware tasks.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Notchy uses the microphone for Gemini Live voice conversations.";
+				INFOPLIST_KEY_NSNetworkVolumesUsageDescription = "Notchy needs this to provide nearby share functionality";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSRemindersFullAccessUsageDescription = "Notchy needs this to show upcoming reminders";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Needed to show reminders";
+				INFOPLIST_KEY_NSSystemExtensionUsageDescription = "Notchy needs this extension to create a virtual multi-output audio device.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sapphire/Services/Music",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 3.0;
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cshariq.sapphire;
+				PRODUCT_NAME = Notchy;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				REGISTER_APP_GROUPS = YES;
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjC/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(SDKROOT)/System/Library/PrivateFrameworks";
+			};
+			name = Release;
+		};
+		DA7C49872E15CCA50049937A /* Debug configuration for PBXNativeTarget "NearbyShare" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "";
+				EXECUTABLE_PREFIX = lib;
+				LD_DYLIB_INSTALL_NAME = "@rpath/libNearbyShare.dylib";
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DA7C49882E15CCA50049937A /* Release configuration for PBXNativeTarget "NearbyShare" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "";
+				EXECUTABLE_PREFIX = lib;
+				LD_DYLIB_INSTALL_NAME = "@rpath/libNearbyShare.dylib";
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DAA7D9D92E8633B20032748B /* Debug configuration for PBXNativeTarget "abt" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DAA7D9DA2E8633B20032748B /* Release configuration for PBXNativeTarget "abt" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F1CE00000000000000000EAA /* Debug configuration for PBXNativeTarget "SapphireFinderSync" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KVQFWJ7C7S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PublicExtensionStubs/FinderSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 2.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cshariq.sapphire.FinderSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = appex;
+			};
+			name = Debug;
+		};
+		F1CE00000000000000000FAA /* Release configuration for PBXNativeTarget "SapphireFinderSync" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KVQFWJ7C7S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PublicExtensionStubs/FinderSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 2.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cshariq.sapphire.FinderSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = appex;
+			};
+			name = Release;
+		};
+		F2DE00000000000000000CBB /* Debug configuration for PBXNativeTarget "SapphireFileProvider" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KVQFWJ7C7S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PublicExtensionStubs/FileProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 2.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cshariq.sapphire.FileProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = appex;
+			};
+			name = Debug;
+		};
+		F2DE00000000000000000DBB /* Release configuration for PBXNativeTarget "SapphireFileProvider" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KVQFWJ7C7S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PublicExtensionStubs/FileProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 2.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cshariq.sapphire.FileProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = appex;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A17D00000000000000000013 /* Build configuration list for PBXNativeTarget "SapphireAndroidWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A17D00000000000000000011 /* Debug configuration for PBXNativeTarget "SapphireAndroidWidgets" */,
+				A17D00000000000000000012 /* Release configuration for PBXNativeTarget "SapphireAndroidWidgets" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		CAFE100000000000000011AA /* Build configuration list for PBXNativeTarget "SapphireCameraExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAFE10000000000000000FAA /* Debug configuration for PBXNativeTarget "SapphireCameraExtension" */,
+				CAFE100000000000000010AA /* Release configuration for PBXNativeTarget "SapphireCameraExtension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		CAFE20000000000000000EBB /* Build configuration list for PBXNativeTarget "SapphireAudioDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAFE20000000000000000CBB /* Debug configuration for PBXNativeTarget "SapphireAudioDriver" */,
+				CAFE20000000000000000DBB /* Release configuration for PBXNativeTarget "SapphireAudioDriver" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		DA452EB32EAA57C90070E5C9 /* Build configuration list for PBXNativeTarget "com.shariq.sapphireHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA452EB42EAA57C90070E5C9 /* Debug configuration for PBXNativeTarget "com.shariq.sapphireHelper" */,
+				DA452EB52EAA57C90070E5C9 /* Release configuration for PBXNativeTarget "com.shariq.sapphireHelper" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		DA46CF712DCBCA0000F00EC5 /* Build configuration list for PBXProject "Sapphire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA46CF992DCBCA0100F00EC5 /* Debug configuration for PBXProject "Sapphire" */,
+				DA46CF9A2DCBCA0100F00EC5 /* Release configuration for PBXProject "Sapphire" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		DA46CF8A2DCBCA0100F00EC5 /* Build configuration list for PBXNativeTarget "SapphireTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA46CF882DCBCA0100F00EC5 /* Debug configuration for PBXNativeTarget "SapphireTests" */,
+				DA46CF892DCBCA0100F00EC5 /* Release configuration for PBXNativeTarget "SapphireTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		DA46CF9B2DCBCA0100F00EC5 /* Build configuration list for PBXNativeTarget "Sapphire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA46CF9C2DCBCA0100F00EC5 /* Debug configuration for PBXNativeTarget "Sapphire" */,
+				DA46CF9D2DCBCA0100F00EC5 /* Release configuration for PBXNativeTarget "Sapphire" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		DA7C49862E15CCA50049937A /* Build configuration list for PBXNativeTarget "NearbyShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7C49872E15CCA50049937A /* Debug configuration for PBXNativeTarget "NearbyShare" */,
+				DA7C49882E15CCA50049937A /* Release configuration for PBXNativeTarget "NearbyShare" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		DAA7D9D82E8633B20032748B /* Build configuration list for PBXNativeTarget "abt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA7D9D92E8633B20032748B /* Debug configuration for PBXNativeTarget "abt" */,
+				DAA7D9DA2E8633B20032748B /* Release configuration for PBXNativeTarget "abt" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		F1CE000000000000000009AA /* Build configuration list for PBXNativeTarget "SapphireFinderSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1CE00000000000000000EAA /* Debug configuration for PBXNativeTarget "SapphireFinderSync" */,
+				F1CE00000000000000000FAA /* Release configuration for PBXNativeTarget "SapphireFinderSync" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		F2DE00000000000000000BBB /* Build configuration list for PBXNativeTarget "SapphireFileProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2DE00000000000000000CBB /* Debug configuration for PBXNativeTarget "SapphireFileProvider" */,
+				F2DE00000000000000000DBB /* Release configuration for PBXNativeTarget "SapphireFileProvider" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA48B0192E93DF9B0099BF74 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.4;
+			};
+		};
+		DA5E1008304CBB63003D1D37 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.18.0;
+			};
+		};
+		DA7C49A62E15D3660049937A /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.30.0;
+			};
+		};
+		DA8FAEFC2E7CA8B900C9BD1A /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/robbiehanson/CocoaAsyncSocket";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.6.5;
+			};
+		};
+		DAA7D8E02E8488800032748B /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.1;
+			};
+		};
+		DACA66602E8B70E60056ED60 /* XCRemoteSwiftPackageReference "qrcode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dagronf/qrcode.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 27.11.0;
+			};
+		};
+		DAD47CD22E13C3DB001B70C8 /* XCRemoteSwiftPackageReference "SwiftECC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/leif-ibsen/SwiftECC.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.5.0;
+			};
+		};
+		F3A600000000000000000001 /* XCRemoteSwiftPackageReference "Yams" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jpsim/Yams.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		350EC0B0ACC04131989F6CB6 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA5E1008304CBB63003D1D37 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		DA48B01A2E93DF9B0099BF74 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA48B0192E93DF9B0099BF74 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+		DA5E1009304CBB63003D1D37 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA5E1008304CBB63003D1D37 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		DA5E100F304CBB63003D1D37 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA5E1008304CBB63003D1D37 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		DA5E1011304CBB63003D1D37 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA5E1008304CBB63003D1D37 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		DA7C49A42E15D34D0049937A /* SwiftECC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAD47CD22E13C3DB001B70C8 /* XCRemoteSwiftPackageReference "SwiftECC" */;
+			productName = SwiftECC;
+		};
+		DA7C49A72E15D3660049937A /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA7C49A62E15D3660049937A /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+		DACA66612E8B70E60056ED60 /* QRCode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DACA66602E8B70E60056ED60 /* XCRemoteSwiftPackageReference "qrcode" */;
+			productName = QRCode;
+		};
+		F3A600000000000000000002 /* Yams */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3A600000000000000000001 /* XCRemoteSwiftPackageReference "Yams" */;
+			productName = Yams;
+		};
+		FD831867A2F947938E17E286 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA5E1008304CBB63003D1D37 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DA46CF6E2DCBCA0000F00EC5 /* Project object */;
+}
